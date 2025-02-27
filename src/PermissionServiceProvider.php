@@ -12,6 +12,7 @@ class PermissionServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->offerPublishing();
+        $this->commands([]);
     }
 
     protected function offerPublishing(): void
