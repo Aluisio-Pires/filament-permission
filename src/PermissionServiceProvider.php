@@ -14,13 +14,6 @@ class PermissionServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->offerPublishing();
-
-        $this->registerAbout();
-    }
-
-    public function register(): void
-    {
-        //
     }
 
     protected function offerPublishing(): void
@@ -33,8 +26,6 @@ class PermissionServiceProvider extends ServiceProvider
             // function not available and 'publish' not relevant in Lumen
             return;
         }
-
-        $this->publishesFiles();
     }
 
     /**
@@ -50,17 +41,6 @@ class PermissionServiceProvider extends ServiceProvider
             ->flatMap(fn ($path) => $filesystem->glob($path.'*_'.$migrationFileName))
             ->push($this->app->databasePath()."/migrations/{$timestamp}_{$migrationFileName}")
             ->first();
-    }
-
-    protected function registerAbout(): void
-    {
-        if (! class_exists(InstalledVersions::class) || ! class_exists(AboutCommand::class)) {
-            return;
-        }
-
-        AboutCommand::add('AluisioPires Permissions', static fn () => [
-            'Version' => InstalledVersions::getPrettyVersion('aluisio-pires/filament-permission'),
-        ]);
     }
 
     private function publishesFiles(): void
