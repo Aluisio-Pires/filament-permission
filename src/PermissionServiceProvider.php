@@ -14,6 +14,13 @@ class PermissionServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->offerPublishing();
+
+        $this->registerAbout();
+    }
+
+    public function register(): void
+    {
+        //
     }
 
     protected function offerPublishing(): void
@@ -26,6 +33,8 @@ class PermissionServiceProvider extends ServiceProvider
             // function not available and 'publish' not relevant in Lumen
             return;
         }
+
+        $this->publishesFiles();
     }
 
     /**
