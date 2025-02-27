@@ -2,9 +2,7 @@
 
 namespace AluisioPires\Permission;
 
-use Composer\InstalledVersions;
 use Illuminate\Filesystem\Filesystem;
-use Illuminate\Foundation\Console\AboutCommand;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\ServiceProvider;
@@ -16,19 +14,9 @@ class PermissionServiceProvider extends ServiceProvider
         $this->offerPublishing();
     }
 
-    public function register(): void
-    {
-        //
-    }
-
     protected function offerPublishing(): void
     {
         if (! $this->app->runningInConsole()) {
-            return;
-        }
-
-        if (! function_exists('config_path')) {
-            // function not available and 'publish' not relevant in Lumen
             return;
         }
 
