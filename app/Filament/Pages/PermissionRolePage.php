@@ -25,7 +25,7 @@ class PermissionRolePage extends Page
 
     protected static ?string $navigationIcon = 'heroicon-o-key';
 
-    protected static string $view = 'pages.permission-role-page';
+    protected static string $view = 'filament.pages.permission-role-page';
 
     public static function getRoutePath(): string
     {
