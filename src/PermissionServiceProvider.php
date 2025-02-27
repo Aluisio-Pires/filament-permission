@@ -217,7 +217,7 @@ class PermissionServiceProvider extends ServiceProvider
         ], 'permission-filament');
 
         $this->publishes([
-            __DIR__.'/../app/Filament/Resources/PermissionResource/Pages/ListPermission.php' => app_path('Filament/Resources/PermissionResource/Pages/ListPermission.php'),
+            __DIR__.'/../app/Filament/Resources/PermissionResource/Pages/ListPermissions.php' => app_path('Filament/Resources/PermissionResource/Pages/ListPermission.php'),
         ], 'permission-filament');
 
         $this->publishes([
@@ -237,7 +237,7 @@ class PermissionServiceProvider extends ServiceProvider
         ], 'permission-filament');
 
         $this->publishes([
-            __DIR__.'/../app/Filament/Resources/RoleResource/Pages/ListRole.php' => app_path('Filament/Resources/RoleResource/Pages/ListRole.php'),
+            __DIR__.'/../app/Filament/Resources/RoleResource/Pages/ListRoles.php' => app_path('Filament/Resources/RoleResource/Pages/ListRole.php'),
         ], 'permission-filament');
 
         $this->publishes([
