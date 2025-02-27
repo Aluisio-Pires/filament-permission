@@ -2,19 +2,12 @@
 
 namespace AluisioPires\Permission;
 
-use AluisioPires\Permission\Contracts\Permission as PermissionContract;
-use AluisioPires\Permission\Contracts\Role as RoleContract;
 use Composer\InstalledVersions;
-use Illuminate\Contracts\Auth\Access\Gate;
-use Illuminate\Contracts\Events\Dispatcher;
-use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Console\AboutCommand;
-use Illuminate\Routing\Route;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\ServiceProvider;
-use Illuminate\View\Compilers\BladeCompiler;
 
 class PermissionServiceProvider extends ServiceProvider
 {
@@ -22,36 +15,12 @@ class PermissionServiceProvider extends ServiceProvider
     {
         $this->offerPublishing();
 
-        $this->registerMacroHelpers();
-
-        $this->registerCommands();
-
-        $this->registerModelBindings();
-
-        $this->registerOctaneListener();
-
-        $this->callAfterResolving(Gate::class, function (Gate $gate, Application $app) {
-            if ($this->app['config']->get('permission.register_permission_check_method')) {
-                /** @var PermissionRegistrar $permissionLoader */
-                $permissionLoader = $app->get(PermissionRegistrar::class);
-                $permissionLoader->clearPermissionsCollection();
-                $permissionLoader->registerPermissions($gate);
-            }
-        });
-
-        $this->app->singleton(PermissionRegistrar::class);
-
         $this->registerAbout();
     }
 
-    public function register()
+    public function register(): void
     {
-        $this->mergeConfigFrom(
-            __DIR__.'/../config/permission.php',
-            'permission'
-        );
-
-        $this->callAfterResolving('blade.compiler', fn (BladeCompiler $bladeCompiler) => $this->registerBladeExtensions($bladeCompiler));
+        //
     }
 
     protected function offerPublishing(): void
@@ -66,91 +35,6 @@ class PermissionServiceProvider extends ServiceProvider
         }
 
         $this->publishesFiles();
-    }
-
-    protected function registerCommands(): void
-    {
-        $this->commands([
-            Commands\CacheReset::class,
-        ]);
-
-        if (! $this->app->runningInConsole()) {
-            return;
-        }
-
-        $this->commands([
-            Commands\CreateRole::class,
-            Commands\CreatePermission::class,
-            Commands\Show::class,
-            Commands\UpgradeForTeams::class,
-        ]);
-    }
-
-    protected function registerOctaneListener(): void
-    {
-        if ($this->app->runningInConsole() || ! $this->app['config']->get('octane.listeners')) {
-            return;
-        }
-
-        $dispatcher = $this->app[Dispatcher::class];
-        // @phpstan-ignore-next-line
-        $dispatcher->listen(function (\Laravel\Octane\Contracts\OperationTerminated $event) {
-            // @phpstan-ignore-next-line
-            $event->sandbox->make(PermissionRegistrar::class)->setPermissionsTeamId(null);
-        });
-
-        if (! $this->app['config']->get('permission.register_octane_reset_listener')) {
-            return;
-        }
-        // @phpstan-ignore-next-line
-        $dispatcher->listen(function (\Laravel\Octane\Contracts\OperationTerminated $event) {
-            // @phpstan-ignore-next-line
-            $event->sandbox->make(PermissionRegistrar::class)->clearPermissionsCollection();
-        });
-    }
-
-    protected function registerModelBindings(): void
-    {
-        $this->app->bind(PermissionContract::class, fn ($app) => $app->make($app->config['permission.models.permission']));
-        $this->app->bind(RoleContract::class, fn ($app) => $app->make($app->config['permission.models.role']));
-    }
-
-    public static function bladeMethodWrapper($method, $role, $guard = null): bool
-    {
-        return auth($guard)->check() && auth($guard)->user()->{$method}($role);
-    }
-
-    protected function registerBladeExtensions(BladeCompiler $bladeCompiler): void
-    {
-        $bladeMethodWrapper = '\\AluisioPires\\Permission\\PermissionServiceProvider::bladeMethodWrapper';
-
-        // permission checks
-        $bladeCompiler->if('haspermission', fn () => $bladeMethodWrapper('checkPermissionTo', ...func_get_args()));
-
-        // role checks
-        $bladeCompiler->if('role', fn () => $bladeMethodWrapper('hasRole', ...func_get_args()));
-        $bladeCompiler->if('hasrole', fn () => $bladeMethodWrapper('hasRole', ...func_get_args()));
-        $bladeCompiler->if('hasanyrole', fn () => $bladeMethodWrapper('hasAnyRole', ...func_get_args()));
-        $bladeCompiler->if('hasallroles', fn () => $bladeMethodWrapper('hasAllRoles', ...func_get_args()));
-        $bladeCompiler->if('hasexactroles', fn () => $bladeMethodWrapper('hasExactRoles', ...func_get_args()));
-        $bladeCompiler->directive('endunlessrole', fn () => '<?php endif; ?>');
-    }
-
-    protected function registerMacroHelpers(): void
-    {
-        if (! method_exists(Route::class, 'macro')) { // @phpstan-ignore-line Lumen
-            return;
-        }
-
-        Route::macro('role', function ($roles = []) {
-            /** @var Route $this */
-            return $this->middleware('role:'.implode('|', Arr::wrap($roles)));
-        });
-
-        Route::macro('permission', function ($permissions = []) {
-            /** @var Route $this */
-            return $this->middleware('permission:'.implode('|', Arr::wrap($permissions)));
-        });
     }
 
     /**
@@ -174,34 +58,22 @@ class PermissionServiceProvider extends ServiceProvider
             return;
         }
 
-        // array format: 'Display Text' => 'boolean-config-key name'
-        $features = [
-            'Teams' => 'teams',
-            'Wildcard-Permissions' => 'enable_wildcard_permission',
-            'Octane-Listener' => 'register_octane_reset_listener',
-            'Passport' => 'use_passport_client_credentials',
-        ];
-
-        $config = $this->app['config'];
-
         AboutCommand::add('AluisioPires Permissions', static fn () => [
-            'Features Enabled' => collect($features)
-                ->filter(fn (string $feature, string $name): bool => $config->get("permission.{$feature}"))
-                ->keys()
-                ->whenEmpty(fn (Collection $collection) => $collection->push('Default'))
-                ->join(', '),
             'Version' => InstalledVersions::getPrettyVersion('aluisio-pires/filament-permission'),
         ]);
     }
 
-    private function publishesFiles()
+    private function publishesFiles(): void
     {
-        $this->publishes([
-            __DIR__.'/../config/permission.php' => config_path('permission.php'),
-        ], 'permission-config');
+        Artisan::call(
+            'vendor:publish',
+            [
+                '--provider' => "Spatie\Permission\PermissionServiceProvider",
+            ]
+        );
 
         $this->publishes([
-            __DIR__.'/../database/migrations/create_permission_tables.php.stub' => $this->getMigrationFileName('create_permission_tables.php'),
+            __DIR__.'/../database/migrations/seed_permissions.php.stub' => $this->getMigrationFileName('seed_permissions.php'),
         ], 'permission-migrations');
 
         $this->publishes([

@@ -1,0 +1,28 @@
+<?php
+
+use Database\seeders\PermissionSeeder;
+use Illuminate\Support\Facades\Artisan;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Artisan::call(
+            'db:seed',
+            [
+                '--class' => PermissionSeeder::class,
+            ]
+        );
+    }
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        //
+    }
+};

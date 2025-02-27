@@ -4,6 +4,16 @@
     "license": "MIT",
     "keywords": [
         "spatie",
+        "laravel-permission",
+        "filament",
+        "filament-permission",
+        "spatie/laravel-permission",
+        "spatie/filament-permission",
+        "spatie/laravel-permission-filament",
+        "aluisio",
+        "aluisio-pires",
+        "aluisio-pires/filament-permission",
+        "aluisio-pires/laravel-permission",
         "laravel",
         "permission",
         "permissions",
@@ -14,10 +24,10 @@
     ],
     "authors": [
         {
-            "name": "Freek Van der Herten",
-            "email": "freek@spatie.be",
-            "homepage": "https://spatie.be",
-            "role": "Developer"
+            "name": "Aluisio Pires",
+            "email": "aluisiopireseng@gmail.com",
+            "homepage": "https://aluisiopires.com",
+            "role": "Laravel Architect"
         }
     ],
     "homepage": "https://github.com/aluisio-pires/filament-permission",
@@ -27,7 +37,8 @@
         "illuminate/auth": "^8.12|^9.0|^10.0|^11.0|^12.0",
         "illuminate/container": "^8.12|^9.0|^10.0|^11.0|^12.0",
         "illuminate/contracts": "^8.12|^9.0|^10.0|^11.0|^12.0",
-        "illuminate/database": "^8.12|^9.0|^10.0|^11.0|^12.0"
+        "illuminate/database": "^8.12|^9.0|^10.0|^11.0|^12.0",
+        "spatie/laravel-permission": "^6.15"
     },
     "require-dev": {
         "laravel/passport": "^11.0|^12.0",
@@ -40,14 +51,6 @@
     "autoload": {
         "psr-4": {
             "AluisioPires\\Permission\\": "src"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "AluisioPires\\Permission\\Tests\\": "tests"
         }
     },
     "config": {
@@ -65,8 +68,6 @@
         }
     },
     "scripts": {
-        "test": "phpunit",
-        "format": "pint",
-        "analyse": "echo 'Checking dependencies...' && composer require --dev larastan/larastan && phpstan analyse"
+        "format": "pint"
     }
 }
