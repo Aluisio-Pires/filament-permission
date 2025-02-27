@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission\Tests\TestModels;
+namespace AluisioPires\Permission\Tests\TestModels;
 
 use Illuminate\Support\Str;
 

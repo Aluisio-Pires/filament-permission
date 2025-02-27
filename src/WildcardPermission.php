@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Permission;
+namespace AluisioPires\Permission;
 
+use AluisioPires\Permission\Contracts\Wildcard;
+use AluisioPires\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use Spatie\Permission\Contracts\Wildcard;
-use Spatie\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
 
 class WildcardPermission implements Wildcard
 {

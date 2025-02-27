@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace AluisioPires\Permission\Tests;
 
+use AluisioPires\Permission\Tests\TestModels\Content;
 use Illuminate\Contracts\Auth\Access\Authorizable;
 use Illuminate\Contracts\Auth\Access\Gate;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Tests\TestModels\Content;
 
 class PolicyTest extends TestCase
 {

@@ -2,13 +2,13 @@
 
 namespace Database\seeders;
 
+use AluisioPires\Permission\Models\Permission;
+use AluisioPires\Permission\Models\Role;
 use Illuminate\Container\Container;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Models\Role;
 
 class PermissionSeeder extends Seeder
 {
@@ -17,7 +17,7 @@ class PermissionSeeder extends Seeder
      */
     public function run(): void
     {
-        app()[\Spatie\Permission\PermissionRegistrar::class]->forgetCachedPermissions();
+        app()[\AluisioPires\Permission\PermissionRegistrar::class]->forgetCachedPermissions();
 
         $role = Role::firstOrCreate(['name' => 'admin']);
         $modelPermissions = $this->crudPermissionNames();
@@ -32,7 +32,7 @@ class PermissionSeeder extends Seeder
             Permission::firstOrCreate(['name' => $permission, 'guard_name' => 'web']);
         });
 
-        app()[\Spatie\Permission\PermissionRegistrar::class]->forgetCachedPermissions();
+        app()[\AluisioPires\Permission\PermissionRegistrar::class]->forgetCachedPermissions();
 
         $role->givePermissionTo($permissions);
     }

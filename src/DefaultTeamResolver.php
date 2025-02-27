@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Permission;
+namespace AluisioPires\Permission;
 
-use Spatie\Permission\Contracts\PermissionsTeamResolver;
+use AluisioPires\Permission\Contracts\PermissionsTeamResolver;
 
 class DefaultTeamResolver implements PermissionsTeamResolver
 {

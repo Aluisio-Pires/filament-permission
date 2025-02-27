@@ -1,20 +1,20 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace AluisioPires\Permission\Tests;
 
+use AluisioPires\Permission\Contracts\Permission;
+use AluisioPires\Permission\Contracts\Role;
+use AluisioPires\Permission\Events\PermissionAttached;
+use AluisioPires\Permission\Events\PermissionDetached;
+use AluisioPires\Permission\Exceptions\GuardDoesNotMatch;
+use AluisioPires\Permission\Exceptions\PermissionDoesNotExist;
+use AluisioPires\Permission\Tests\TestModels\SoftDeletingUser;
+use AluisioPires\Permission\Tests\TestModels\User;
 use DB;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Event;
 use PHPUnit\Framework\Attributes\RequiresPhp;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Events\PermissionAttached;
-use Spatie\Permission\Events\PermissionDetached;
-use Spatie\Permission\Exceptions\GuardDoesNotMatch;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Spatie\Permission\Tests\TestModels\SoftDeletingUser;
-use Spatie\Permission\Tests\TestModels\User;
 
 class HasPermissionsTest extends TestCase
 {

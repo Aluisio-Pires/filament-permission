@@ -1,16 +1,16 @@
 <?php
 
-namespace Spatie\Permission\Traits;
+namespace AluisioPires\Permission\Traits;
 
+use AluisioPires\Permission\Contracts\Permission;
+use AluisioPires\Permission\Contracts\Role;
+use AluisioPires\Permission\Events\RoleAttached;
+use AluisioPires\Permission\Events\RoleDetached;
+use AluisioPires\Permission\PermissionRegistrar;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Events\RoleAttached;
-use Spatie\Permission\Events\RoleDetached;
-use Spatie\Permission\PermissionRegistrar;
 
 trait HasRoles
 {

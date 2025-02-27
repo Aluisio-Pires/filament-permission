@@ -1,23 +1,23 @@
 <?php
 
-namespace Spatie\Permission\Traits;
+namespace AluisioPires\Permission\Traits;
 
+use AluisioPires\Permission\Contracts\Permission;
+use AluisioPires\Permission\Contracts\Role;
+use AluisioPires\Permission\Contracts\Wildcard;
+use AluisioPires\Permission\Events\PermissionAttached;
+use AluisioPires\Permission\Events\PermissionDetached;
+use AluisioPires\Permission\Exceptions\GuardDoesNotMatch;
+use AluisioPires\Permission\Exceptions\PermissionDoesNotExist;
+use AluisioPires\Permission\Exceptions\WildcardPermissionInvalidArgument;
+use AluisioPires\Permission\Exceptions\WildcardPermissionNotImplementsContract;
+use AluisioPires\Permission\Guard;
+use AluisioPires\Permission\PermissionRegistrar;
+use AluisioPires\Permission\WildcardPermission;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-use Spatie\Permission\Contracts\Permission;
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Contracts\Wildcard;
-use Spatie\Permission\Events\PermissionAttached;
-use Spatie\Permission\Events\PermissionDetached;
-use Spatie\Permission\Exceptions\GuardDoesNotMatch;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Spatie\Permission\Exceptions\WildcardPermissionInvalidArgument;
-use Spatie\Permission\Exceptions\WildcardPermissionNotImplementsContract;
-use Spatie\Permission\Guard;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\WildcardPermission;
 
 trait HasPermissions
 {

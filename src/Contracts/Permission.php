@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission\Contracts;
+namespace AluisioPires\Permission\Contracts;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
@@ -9,9 +9,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  * @property string $name
  * @property string|null $guard_name
  *
- * @mixin \Spatie\Permission\Models\Permission
+ * @mixin \AluisioPires\Permission\Models\Permission
  *
- * @phpstan-require-extends \Spatie\Permission\Models\Permission
+ * @phpstan-require-extends \AluisioPires\Permission\Models\Permission
  */
 interface Permission
 {
@@ -24,7 +24,7 @@ interface Permission
      * Find a permission by its name.
      *
      *
-     * @throws \Spatie\Permission\Exceptions\PermissionDoesNotExist
+     * @throws \AluisioPires\Permission\Exceptions\PermissionDoesNotExist
      */
     public static function findByName(string $name, ?string $guardName): self;
 
@@ -32,7 +32,7 @@ interface Permission
      * Find a permission by its id.
      *
      *
-     * @throws \Spatie\Permission\Exceptions\PermissionDoesNotExist
+     * @throws \AluisioPires\Permission\Exceptions\PermissionDoesNotExist
      */
     public static function findById(int|string $id, ?string $guardName): self;
 

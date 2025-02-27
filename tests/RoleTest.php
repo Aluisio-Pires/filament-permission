@@ -1,18 +1,18 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace AluisioPires\Permission\Tests;
 
+use AluisioPires\Permission\Contracts\Role;
+use AluisioPires\Permission\Exceptions\GuardDoesNotMatch;
+use AluisioPires\Permission\Exceptions\PermissionDoesNotExist;
+use AluisioPires\Permission\Exceptions\RoleAlreadyExists;
+use AluisioPires\Permission\Exceptions\RoleDoesNotExist;
+use AluisioPires\Permission\Models\Permission;
+use AluisioPires\Permission\PermissionRegistrar;
+use AluisioPires\Permission\Tests\TestModels\Admin;
+use AluisioPires\Permission\Tests\TestModels\RuntimeRole;
+use AluisioPires\Permission\Tests\TestModels\User;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Contracts\Role;
-use Spatie\Permission\Exceptions\GuardDoesNotMatch;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Spatie\Permission\Exceptions\RoleAlreadyExists;
-use Spatie\Permission\Exceptions\RoleDoesNotExist;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Tests\TestModels\Admin;
-use Spatie\Permission\Tests\TestModels\RuntimeRole;
-use Spatie\Permission\Tests\TestModels\User;
 
 class RoleTest extends TestCase
 {

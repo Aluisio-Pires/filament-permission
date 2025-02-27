@@ -6,44 +6,44 @@ All notable changes to `laravel-permission` will be documented in this file
 
 ### What's Changed
 
-* Added 4 events for adding and removing roles or permissions by @sven-wegner in https://github.com/spatie/laravel-permission/pull/2742
-* Fixed bug of loading user roles of different teams to current team by @mohamedds-12 in https://github.com/spatie/laravel-permission/pull/2803
+* Added 4 events for adding and removing roles or permissions by @sven-wegner in https://github.com/aluisio-pires/filament-permission/pull/2742
+* Fixed bug of loading user roles of different teams to current team by @mohamedds-12 in https://github.com/aluisio-pires/filament-permission/pull/2803
 
 ### New Contributors
 
-* @sven-wegner made their first contribution in https://github.com/spatie/laravel-permission/pull/2742
-* @mohamedds-12 made their first contribution in https://github.com/spatie/laravel-permission/pull/2803
+* @sven-wegner made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2742
+* @mohamedds-12 made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2803
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.14.0...6.15.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.14.0...6.15.0
 
 ## 6.14.0 - 2025-02-13
 
 ### What's Changed
 
-* LDAP model lookup from Auth Provider by @crossplatformconsulting in https://github.com/spatie/laravel-permission/pull/2750
+* LDAP model lookup from Auth Provider by @crossplatformconsulting in https://github.com/aluisio-pires/filament-permission/pull/2750
 
 ### Internals
 
-* Add PHPUnit annotations, for future compatibility with PHPUnit 12 by @drbyte in https://github.com/spatie/laravel-permission/pull/2806
+* Add PHPUnit annotations, for future compatibility with PHPUnit 12 by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2806
 
 ### New Contributors
 
-* @crossplatformconsulting made their first contribution in https://github.com/spatie/laravel-permission/pull/2750
+* @crossplatformconsulting made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2750
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.13.0...6.14.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.13.0...6.14.0
 
 ## 6.13.0 - 2025-02-05
 
 ### What's Changed
 
-* LazyLoading: Explicitly call `loadMissing('permissions')` when the relation is needed, and test with `Model::preventLazyLoading()` by @erikn69 in https://github.com/spatie/laravel-permission/pull/2776
-* [Docs] Add instructions to reinitialize cache for multi-tenancy key settings when updating multiple tenants in a single request cycle, by @sudkumar in https://github.com/spatie/laravel-permission/pull/2804
+* LazyLoading: Explicitly call `loadMissing('permissions')` when the relation is needed, and test with `Model::preventLazyLoading()` by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2776
+* [Docs] Add instructions to reinitialize cache for multi-tenancy key settings when updating multiple tenants in a single request cycle, by @sudkumar in https://github.com/aluisio-pires/filament-permission/pull/2804
 
 ### New Contributors
 
-* @sudkumar made their first contribution in https://github.com/spatie/laravel-permission/pull/2804
+* @sudkumar made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2804
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.12.0...6.13.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.12.0...6.13.0
 
 ## 6.12.0 - 2025-01-31
 
@@ -51,111 +51,111 @@ All notable changes to `laravel-permission` will be documented in this file
 
 * Support Laravel 12
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.11.0...6.12.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.11.0...6.12.0
 
 ## 6.11.0 - 2025-01-30
 
 ### What's Changed
 
-* Add configurable team resolver for permission team id (helpful for Jetstream, etc) by @adrenallen in https://github.com/spatie/laravel-permission/pull/2790
+* Add configurable team resolver for permission team id (helpful for Jetstream, etc) by @adrenallen in https://github.com/aluisio-pires/filament-permission/pull/2790
 
 ### Internals
 
-* Replace php-cs-fixer with Laravel Pint by @bobbrodie in https://github.com/spatie/laravel-permission/pull/2780
+* Replace php-cs-fixer with Laravel Pint by @bobbrodie in https://github.com/aluisio-pires/filament-permission/pull/2780
 
 ### Documentation Updates
 
-* [Docs] Include namespace in example in uuid.md by @ken-tam in https://github.com/spatie/laravel-permission/pull/2764
-* [Docs] Include Laravel 11 example in exceptions.md by @frankliniwobi in https://github.com/spatie/laravel-permission/pull/2768
-* [Docs] Fix typo in code example in passport.md by @m3skalina in https://github.com/spatie/laravel-permission/pull/2782
-* [Docs] Correct username in new-app.md by @trippodi in https://github.com/spatie/laravel-permission/pull/2785
-* [Docs] Add composer specificity by @imanghafoori1 in https://github.com/spatie/laravel-permission/pull/2772
-* [Docs] Update installation-laravel.md to fix providers.php location. by @curiousteam in https://github.com/spatie/laravel-permission/pull/2796
+* [Docs] Include namespace in example in uuid.md by @ken-tam in https://github.com/aluisio-pires/filament-permission/pull/2764
+* [Docs] Include Laravel 11 example in exceptions.md by @frankliniwobi in https://github.com/aluisio-pires/filament-permission/pull/2768
+* [Docs] Fix typo in code example in passport.md by @m3skalina in https://github.com/aluisio-pires/filament-permission/pull/2782
+* [Docs] Correct username in new-app.md by @trippodi in https://github.com/aluisio-pires/filament-permission/pull/2785
+* [Docs] Add composer specificity by @imanghafoori1 in https://github.com/aluisio-pires/filament-permission/pull/2772
+* [Docs] Update installation-laravel.md to fix providers.php location. by @curiousteam in https://github.com/aluisio-pires/filament-permission/pull/2796
 
 ### New Contributors
 
-* @ken-tam made their first contribution in https://github.com/spatie/laravel-permission/pull/2764
-* @frankliniwobi made their first contribution in https://github.com/spatie/laravel-permission/pull/2768
-* @bobbrodie made their first contribution in https://github.com/spatie/laravel-permission/pull/2780
-* @m3skalina made their first contribution in https://github.com/spatie/laravel-permission/pull/2782
-* @trippodi made their first contribution in https://github.com/spatie/laravel-permission/pull/2785
-* @imanghafoori1 made their first contribution in https://github.com/spatie/laravel-permission/pull/2772
-* @curiousteam made their first contribution in https://github.com/spatie/laravel-permission/pull/2796
-* @adrenallen made their first contribution in https://github.com/spatie/laravel-permission/pull/2790
+* @ken-tam made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2764
+* @frankliniwobi made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2768
+* @bobbrodie made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2780
+* @m3skalina made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2782
+* @trippodi made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2785
+* @imanghafoori1 made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2772
+* @curiousteam made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2796
+* @adrenallen made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2790
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.10.1...6.11.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.10.1...6.11.0
 
 ## 6.10.1 - 2024-11-08
 
 ### What's Changed
 
-* Fix #2749 regression bug in `6.10.0` : "Can no longer delete permissions" by @erikn69 in https://github.com/spatie/laravel-permission/pull/2759
+* Fix #2749 regression bug in `6.10.0` : "Can no longer delete permissions" by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2759
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.10.0...6.10.1
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.10.0...6.10.1
 
 ## 6.10.0 - 2024-11-05
 
 ### What's Changed
 
-* Fix `GuardDoesNotMatch should accept collection` by @erikn69 in https://github.com/spatie/laravel-permission/pull/2748
-* Improve performance for hydrated collections by @inserve-paul in https://github.com/spatie/laravel-permission/pull/2749
-* Only show error if `cache key exists` and `forgetCachedPermissions` fails by @erikn69 in https://github.com/spatie/laravel-permission/pull/2707
-* Remove v5 cache fallback alias by @drbyte in https://github.com/spatie/laravel-permission/pull/2754
-* Include `Larastan` in `dev` by @drbyte in https://github.com/spatie/laravel-permission/pull/2755
+* Fix `GuardDoesNotMatch should accept collection` by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2748
+* Improve performance for hydrated collections by @inserve-paul in https://github.com/aluisio-pires/filament-permission/pull/2749
+* Only show error if `cache key exists` and `forgetCachedPermissions` fails by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2707
+* Remove v5 cache fallback alias by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2754
+* Include `Larastan` in `dev` by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2755
 
 #### Docs
 
-* [Docs example] Check for 'all' or 'any' permissions before specific permissions by @ceilidhboy in https://github.com/spatie/laravel-permission/pull/2694
-* [Docs] Fix typo in uuid.md by @levizoesch in https://github.com/spatie/laravel-permission/pull/2705
-* [Docs] Upgrade Guide - Add PR links to upgrade guide by @mraheelkhan in https://github.com/spatie/laravel-permission/pull/2716
-* [Docs] use more modern syntax for nullable return type by @galangaidilakbar in https://github.com/spatie/laravel-permission/pull/2719
-* [Docs] camelCase variable naming in example by @KamilWojtalak in https://github.com/spatie/laravel-permission/pull/2723
-* [Docs] Update using-policies.md by @marcleonhard in https://github.com/spatie/laravel-permission/pull/2741
-* [Docs] Example of pushing custom middleware before SubstituteBindings middleware by @WyattCast44 in https://github.com/spatie/laravel-permission/pull/2740
+* [Docs example] Check for 'all' or 'any' permissions before specific permissions by @ceilidhboy in https://github.com/aluisio-pires/filament-permission/pull/2694
+* [Docs] Fix typo in uuid.md by @levizoesch in https://github.com/aluisio-pires/filament-permission/pull/2705
+* [Docs] Upgrade Guide - Add PR links to upgrade guide by @mraheelkhan in https://github.com/aluisio-pires/filament-permission/pull/2716
+* [Docs] use more modern syntax for nullable return type by @galangaidilakbar in https://github.com/aluisio-pires/filament-permission/pull/2719
+* [Docs] camelCase variable naming in example by @KamilWojtalak in https://github.com/aluisio-pires/filament-permission/pull/2723
+* [Docs] Update using-policies.md by @marcleonhard in https://github.com/aluisio-pires/filament-permission/pull/2741
+* [Docs] Example of pushing custom middleware before SubstituteBindings middleware by @WyattCast44 in https://github.com/aluisio-pires/filament-permission/pull/2740
 
 #### Other
 
-* PHP 8.4 tests by @erikn69 in https://github.com/spatie/laravel-permission/pull/2747
-* Fix comment typo by @machacekmartin in https://github.com/spatie/laravel-permission/pull/2753
+* PHP 8.4 tests by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2747
+* Fix comment typo by @machacekmartin in https://github.com/aluisio-pires/filament-permission/pull/2753
 
 ### New Contributors
 
-* @ceilidhboy made their first contribution in https://github.com/spatie/laravel-permission/pull/2694
-* @levizoesch made their first contribution in https://github.com/spatie/laravel-permission/pull/2705
-* @galangaidilakbar made their first contribution in https://github.com/spatie/laravel-permission/pull/2719
-* @KamilWojtalak made their first contribution in https://github.com/spatie/laravel-permission/pull/2723
-* @marcleonhard made their first contribution in https://github.com/spatie/laravel-permission/pull/2741
-* @WyattCast44 made their first contribution in https://github.com/spatie/laravel-permission/pull/2740
-* @inserve-paul made their first contribution in https://github.com/spatie/laravel-permission/pull/2749
-* @machacekmartin made their first contribution in https://github.com/spatie/laravel-permission/pull/2753
+* @ceilidhboy made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2694
+* @levizoesch made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2705
+* @galangaidilakbar made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2719
+* @KamilWojtalak made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2723
+* @marcleonhard made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2741
+* @WyattCast44 made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2740
+* @inserve-paul made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2749
+* @machacekmartin made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2753
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.9.0...6.10.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.9.0...6.10.0
 
 ## 6.9.0 - 2024-06-22
 
 ### What's Changed
 
-* Use `->withPivot()` for teamed relationships (allows `getPivotColumns()`) by @juliangums in https://github.com/spatie/laravel-permission/pull/2679
+* Use `->withPivot()` for teamed relationships (allows `getPivotColumns()`) by @juliangums in https://github.com/aluisio-pires/filament-permission/pull/2679
 * Update docblock on `$role->hasPermissionTo()` to include `BackedEnum` by @drbyte co-authored by @SanderMuller
-* [Docs] Clarify that `$guard_name` can be an array by @angelej in https://github.com/spatie/laravel-permission/pull/2659
-* Fix misc typos in changelog by @szepeviktor in https://github.com/spatie/laravel-permission/pull/2686
+* [Docs] Clarify that `$guard_name` can be an array by @angelej in https://github.com/aluisio-pires/filament-permission/pull/2659
+* Fix misc typos in changelog by @szepeviktor in https://github.com/aluisio-pires/filament-permission/pull/2686
 
 ### New Contributors
 
-* @angelej made their first contribution in https://github.com/spatie/laravel-permission/pull/2659
+* @angelej made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2659
 * @SanderMuller made their first contribution in #2676
-* @szepeviktor made their first contribution in https://github.com/spatie/laravel-permission/pull/2686
+* @szepeviktor made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2686
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.8.0...6.9.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.8.0...6.9.0
 
 ## 6.8.0 - 2024-06-21
 
 ### What's Changed
 
-* Fix can't save the same model twice by @erikn69 in https://github.com/spatie/laravel-permission/pull/2658
-* Fix phpstan from #2616 by @erikn69 in https://github.com/spatie/laravel-permission/pull/2685
+* Fix can't save the same model twice by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2658
+* Fix phpstan from #2616 by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2685
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.7.0...6.8.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.7.0...6.8.0
 
 ## 6.7.0 - 2024-04-19
 
@@ -163,47 +163,47 @@ All notable changes to `laravel-permission` will be documented in this file
 
 - Fixed remaining Octane event contract. Update to #2656 in release `6.5.0`
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.6.0...6.7.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.6.0...6.7.0
 
 ## 6.6.0 - 2024-04-19
 
 ### What's Changed
 
-* Roles: Support for casting role names to enums by @gajosadrian in https://github.com/spatie/laravel-permission/pull/2616
-* Fix permission:show UUID error #2581 by @drbyte in https://github.com/spatie/laravel-permission/pull/2582
-* Cover WildcardPermission instance verification based on its own guard (Allow hasAllPermissions and hasAnyPermission to run on custom guard for WildcardPermission) by @AlexandreBellas in https://github.com/spatie/laravel-permission/pull/2608
-* Register Laravel "About" details by @drbyte in https://github.com/spatie/laravel-permission/pull/2584
+* Roles: Support for casting role names to enums by @gajosadrian in https://github.com/aluisio-pires/filament-permission/pull/2616
+* Fix permission:show UUID error #2581 by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2582
+* Cover WildcardPermission instance verification based on its own guard (Allow hasAllPermissions and hasAnyPermission to run on custom guard for WildcardPermission) by @AlexandreBellas in https://github.com/aluisio-pires/filament-permission/pull/2608
+* Register Laravel "About" details by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2584
 
 ### New Contributors
 
-* @gajosadrian made their first contribution in https://github.com/spatie/laravel-permission/pull/2616
-* @AlexandreBellas made their first contribution in https://github.com/spatie/laravel-permission/pull/2608
+* @gajosadrian made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2616
+* @AlexandreBellas made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2608
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.5.0...6.6.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.5.0...6.6.0
 
 ## 6.5.0 - 2024-04-18
 
 ### What's Changed
 
-* Octane: Fix wrong event listener by @erikn69 in https://github.com/spatie/laravel-permission/pull/2656
-* Teams: Add nullable team_id by @Androlax2 in https://github.com/spatie/laravel-permission/pull/2607
-* Blade: simplify the definition of multiple Blade "if" directives by @alissn in https://github.com/spatie/laravel-permission/pull/2628
-* DocBlocks: Update HasPermissions::collectPermissions() docblock by @Plytas in https://github.com/spatie/laravel-permission/pull/2641
+* Octane: Fix wrong event listener by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2656
+* Teams: Add nullable team_id by @Androlax2 in https://github.com/aluisio-pires/filament-permission/pull/2607
+* Blade: simplify the definition of multiple Blade "if" directives by @alissn in https://github.com/aluisio-pires/filament-permission/pull/2628
+* DocBlocks: Update HasPermissions::collectPermissions() docblock by @Plytas in https://github.com/aluisio-pires/filament-permission/pull/2641
 
 #### Internals
 
-* Update role-permissions.md by @killjin in https://github.com/spatie/laravel-permission/pull/2631
-* Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/spatie/laravel-permission/pull/2630
-* Bump dependabot/fetch-metadata from 1 to 2 by @dependabot in https://github.com/spatie/laravel-permission/pull/2642
+* Update role-permissions.md by @killjin in https://github.com/aluisio-pires/filament-permission/pull/2631
+* Bump ramsey/composer-install from 2 to 3 by @dependabot in https://github.com/aluisio-pires/filament-permission/pull/2630
+* Bump dependabot/fetch-metadata from 1 to 2 by @dependabot in https://github.com/aluisio-pires/filament-permission/pull/2642
 
 ### New Contributors
 
-* @alissn made their first contribution in https://github.com/spatie/laravel-permission/pull/2628
-* @Androlax2 made their first contribution in https://github.com/spatie/laravel-permission/pull/2607
-* @Plytas made their first contribution in https://github.com/spatie/laravel-permission/pull/2641
-* @killjin made their first contribution in https://github.com/spatie/laravel-permission/pull/2631
+* @alissn made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2628
+* @Androlax2 made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2607
+* @Plytas made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2641
+* @killjin made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2631
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.4.0...6.5.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.4.0...6.5.0
 
 ## 6.4.0 - 2024-02-28
 
@@ -211,161 +211,161 @@ All notable changes to `laravel-permission` will be documented in this file
 
 ### What's Changed
 
-* Add Laravel 11 to workflow run tests by @mraheelkhan in https://github.com/spatie/laravel-permission/pull/2605
+* Add Laravel 11 to workflow run tests by @mraheelkhan in https://github.com/aluisio-pires/filament-permission/pull/2605
 * And Passport 12
 
 ### Internals
 
-* Update to use Larastan Org by @arnebr in https://github.com/spatie/laravel-permission/pull/2585
-* laravel-pint-action to major version tag by @erikn69 in https://github.com/spatie/laravel-permission/pull/2586
+* Update to use Larastan Org by @arnebr in https://github.com/aluisio-pires/filament-permission/pull/2585
+* laravel-pint-action to major version tag by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2586
 
 ### New Contributors
 
-* @arnebr made their first contribution in https://github.com/spatie/laravel-permission/pull/2585
-* @mraheelkhan made their first contribution in https://github.com/spatie/laravel-permission/pull/2605
+* @arnebr made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2585
+* @mraheelkhan made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2605
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.3.0...6.4.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.3.0...6.4.0
 
 ## 6.3.0 - 2023-12-24
 
 ### What's Changed
 
-* Octane Fix: Clear wildcard permissions on Tick in https://github.com/spatie/laravel-permission/pull/2583
+* Octane Fix: Clear wildcard permissions on Tick in https://github.com/aluisio-pires/filament-permission/pull/2583
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.2.0...6.3.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.2.0...6.3.0
 
 ## 6.2.0 - 2023-12-09
 
 ### What's Changed
 
-* Skip duplicates on sync (was triggering Integrity Constraint Violation error) by @erikn69 in https://github.com/spatie/laravel-permission/pull/2574
+* Skip duplicates on sync (was triggering Integrity Constraint Violation error) by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2574
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.1.0...6.2.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.1.0...6.2.0
 
 ## 6.1.0 - 2023-11-09
 
 ### What's Changed
 
-- Reset teamId on Octane by @erikn69 in https://github.com/spatie/laravel-permission/pull/2547
-  NOTE: The `\Spatie\Permission\Listeners\OctaneReloadPermissions` listener introduced in 6.0.0 is removed in 6.1.0, because the logic is directly incorporated into the ServiceProvider now.
+- Reset teamId on Octane by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2547
+  NOTE: The `\AluisioPires\Permission\Listeners\OctaneReloadPermissions` listener introduced in 6.0.0 is removed in 6.1.0, because the logic is directly incorporated into the ServiceProvider now.
   
   Thanks @jameshulse for the heads-up and code-review.
   
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.0.1...6.1.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.0.1...6.1.0
 
 ## 6.0.1 - 2023-11-06
 
 ### What's Changed
 
 - Provide a default team_foreign_key value in case config file isn't upgraded yet or teams feature is unused. Fixes #2535
-- [Docs] Update unsetRelation() example in teams-permissions.md by @shdehnavi in https://github.com/spatie/laravel-permission/pull/2534
-- [Docs] Update link in direct-permissions.md by @sevannerse in https://github.com/spatie/laravel-permission/pull/2539
+- [Docs] Update unsetRelation() example in teams-permissions.md by @shdehnavi in https://github.com/aluisio-pires/filament-permission/pull/2534
+- [Docs] Update link in direct-permissions.md by @sevannerse in https://github.com/aluisio-pires/filament-permission/pull/2539
 
 ### New Contributors
 
-- @sevannerse made their first contribution in https://github.com/spatie/laravel-permission/pull/2539
+- @sevannerse made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2539
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/6.0.0...6.0.1
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/6.0.0...6.0.1
 
 ## 6.0.0 - 2023-10-25
 
 ### What's Changed
 
-- Full uuid/guid/ulid support by @erikn69 in https://github.com/spatie/laravel-permission/pull/2089
-- Refactor: Change static properties to non-static by @olivernybroe in https://github.com/spatie/laravel-permission/pull/2324
-- Fix Role::withCount if belongsToMany declared by @xenaio-daniil in https://github.com/spatie/laravel-permission/pull/2280
-- Fix: Lazily bind dependencies by @olivernybroe in https://github.com/spatie/laravel-permission/pull/2321
-- Avoid loss of all permissions/roles pivots on sync error by @erikn69 in https://github.com/spatie/laravel-permission/pull/2341
-- Fix delete permissions on Permissions Model by @erikn69 in https://github.com/spatie/laravel-permission/pull/2366
-- Detach users on role/permission physical deletion by @erikn69 in https://github.com/spatie/laravel-permission/pull/2370
-- Rename clearClassPermissions method to clearPermissionsCollection by @erikn69 in https://github.com/spatie/laravel-permission/pull/2369
-- Use anonymous migrations (for L8+) by @erikn69 in https://github.com/spatie/laravel-permission/pull/2374
-- [BC] Return string on getPermissionClass(), getRoleClass() by @erikn69 in https://github.com/spatie/laravel-permission/pull/2368
-- Only offer publishing when running in console by @erikn69 in https://github.com/spatie/laravel-permission/pull/2377
-- Don't add commands in web interface context by @angeljqv in https://github.com/spatie/laravel-permission/pull/2405
-- [BC] Fix Role->hasPermissionTo() signature to match HasPermissions trait by @erikn69 in https://github.com/spatie/laravel-permission/pull/2380
-- Force that getPermissionsViaRoles, hasPermissionViaRole must be used only by authenticable by @erikn69 in https://github.com/spatie/laravel-permission/pull/2382
-- fix BadMethodCallException: undefined methods hasAnyRole, hasAnyPermissions by @erikn69 in https://github.com/spatie/laravel-permission/pull/2381
-- Add PHPStan workflow with fixes by @erikn69 in https://github.com/spatie/laravel-permission/pull/2376
-- Add BackedEnum support by @drbyte in https://github.com/spatie/laravel-permission/pull/2391
-- Drop PHP 7.3 support by @angeljqv in https://github.com/spatie/laravel-permission/pull/2388
-- Drop PHP 7.4 support by @drbyte in https://github.com/spatie/laravel-permission/pull/2485
-- Test against PHP 8.3 by @erikn69 in https://github.com/spatie/laravel-permission/pull/2512
-- Fix call to an undefined method Role::getRoleClass by @erikn69 in https://github.com/spatie/laravel-permission/pull/2411
-- Remove force loading model relationships by @erikn69 in https://github.com/spatie/laravel-permission/pull/2412
-- Test alternate cache drivers by @erikn69 in https://github.com/spatie/laravel-permission/pull/2416
-- Use attach instead of sync on traits by @erikn69 in https://github.com/spatie/laravel-permission/pull/2420
-- Fewer sqls in syncRoles, syncPermissions by @erikn69 in https://github.com/spatie/laravel-permission/pull/2423
-- Add middleware using static method by @jnoordsij in https://github.com/spatie/laravel-permission/pull/2424
-- Update PHPDocs for IDE autocompletion by @erikn69 in https://github.com/spatie/laravel-permission/pull/2437
-- [BC] Wildcard permissions algorithm performance improvements (ALERT: Breaking Changes) by @danharrin in https://github.com/spatie/laravel-permission/pull/2445
-- Add withoutRole and withoutPermission scopes by @drbyte in https://github.com/spatie/laravel-permission/pull/2463
-- Add support for service-to-service Passport client by @SuperDJ in https://github.com/spatie/laravel-permission/pull/2467
-- Register OctaneReloadPermissions listener for Laravel Octane by @erikn69 in https://github.com/spatie/laravel-permission/pull/2403
-- Add guard name to exceptions by @drbyte in https://github.com/spatie/laravel-permission/pull/2481
-- Update contracts to allow for UUID by @drbyte in https://github.com/spatie/laravel-permission/pull/2480
-- Avoid triggering eloquent.retrieved event by @erikn69 in https://github.com/spatie/laravel-permission/pull/2498
-- [BC] Rename "Middlewares" namespace to "Middleware" by @drbyte in https://github.com/spatie/laravel-permission/pull/2499
-- `@haspermission` directive by @axlwild in https://github.com/spatie/laravel-permission/pull/2515
-- Add guard parameter to can() by @drbyte in https://github.com/spatie/laravel-permission/pull/2526
+- Full uuid/guid/ulid support by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2089
+- Refactor: Change static properties to non-static by @olivernybroe in https://github.com/aluisio-pires/filament-permission/pull/2324
+- Fix Role::withCount if belongsToMany declared by @xenaio-daniil in https://github.com/aluisio-pires/filament-permission/pull/2280
+- Fix: Lazily bind dependencies by @olivernybroe in https://github.com/aluisio-pires/filament-permission/pull/2321
+- Avoid loss of all permissions/roles pivots on sync error by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2341
+- Fix delete permissions on Permissions Model by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2366
+- Detach users on role/permission physical deletion by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2370
+- Rename clearClassPermissions method to clearPermissionsCollection by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2369
+- Use anonymous migrations (for L8+) by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2374
+- [BC] Return string on getPermissionClass(), getRoleClass() by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2368
+- Only offer publishing when running in console by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2377
+- Don't add commands in web interface context by @angeljqv in https://github.com/aluisio-pires/filament-permission/pull/2405
+- [BC] Fix Role->hasPermissionTo() signature to match HasPermissions trait by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2380
+- Force that getPermissionsViaRoles, hasPermissionViaRole must be used only by authenticable by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2382
+- fix BadMethodCallException: undefined methods hasAnyRole, hasAnyPermissions by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2381
+- Add PHPStan workflow with fixes by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2376
+- Add BackedEnum support by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2391
+- Drop PHP 7.3 support by @angeljqv in https://github.com/aluisio-pires/filament-permission/pull/2388
+- Drop PHP 7.4 support by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2485
+- Test against PHP 8.3 by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2512
+- Fix call to an undefined method Role::getRoleClass by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2411
+- Remove force loading model relationships by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2412
+- Test alternate cache drivers by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2416
+- Use attach instead of sync on traits by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2420
+- Fewer sqls in syncRoles, syncPermissions by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2423
+- Add middleware using static method by @jnoordsij in https://github.com/aluisio-pires/filament-permission/pull/2424
+- Update PHPDocs for IDE autocompletion by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2437
+- [BC] Wildcard permissions algorithm performance improvements (ALERT: Breaking Changes) by @danharrin in https://github.com/aluisio-pires/filament-permission/pull/2445
+- Add withoutRole and withoutPermission scopes by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2463
+- Add support for service-to-service Passport client by @SuperDJ in https://github.com/aluisio-pires/filament-permission/pull/2467
+- Register OctaneReloadPermissions listener for Laravel Octane by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2403
+- Add guard name to exceptions by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2481
+- Update contracts to allow for UUID by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2480
+- Avoid triggering eloquent.retrieved event by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2498
+- [BC] Rename "Middlewares" namespace to "Middleware" by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2499
+- `@haspermission` directive by @axlwild in https://github.com/aluisio-pires/filament-permission/pull/2515
+- Add guard parameter to can() by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2526
 
 ### New Contributors
 
-- @xenaio-daniil made their first contribution in https://github.com/spatie/laravel-permission/pull/2280
-- @JensvandeWiel made their first contribution in https://github.com/spatie/laravel-permission/pull/2336
-- @fsamapoor made their first contribution in https://github.com/spatie/laravel-permission/pull/2361
-- @yungifez made their first contribution in https://github.com/spatie/laravel-permission/pull/2394
-- @HasanEksi made their first contribution in https://github.com/spatie/laravel-permission/pull/2418
-- @jnoordsij made their first contribution in https://github.com/spatie/laravel-permission/pull/2424
-- @danharrin made their first contribution in https://github.com/spatie/laravel-permission/pull/2445
-- @SuperDJ made their first contribution in https://github.com/spatie/laravel-permission/pull/2467
-- @ChillMouse made their first contribution in https://github.com/spatie/laravel-permission/pull/2438
-- @Okipa made their first contribution in https://github.com/spatie/laravel-permission/pull/2492
-- @edalzell made their first contribution in https://github.com/spatie/laravel-permission/pull/2494
-- @sirosfakhri made their first contribution in https://github.com/spatie/laravel-permission/pull/2501
-- @juliangums made their first contribution in https://github.com/spatie/laravel-permission/pull/2516
-- @nnnnnnnngu made their first contribution in https://github.com/spatie/laravel-permission/pull/2524
-- @axlwild made their first contribution in https://github.com/spatie/laravel-permission/pull/2515
-- @shdehnavi made their first contribution in https://github.com/spatie/laravel-permission/pull/2527
+- @xenaio-daniil made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2280
+- @JensvandeWiel made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2336
+- @fsamapoor made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2361
+- @yungifez made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2394
+- @HasanEksi made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2418
+- @jnoordsij made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2424
+- @danharrin made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2445
+- @SuperDJ made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2467
+- @ChillMouse made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2438
+- @Okipa made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2492
+- @edalzell made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2494
+- @sirosfakhri made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2501
+- @juliangums made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2516
+- @nnnnnnnngu made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2524
+- @axlwild made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2515
+- @shdehnavi made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2527
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.11.1...6.0.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.11.1...6.0.0
 
 ## 5.11.1 - 2023-10-25
 
 No functional changes. Just several small updates to the Documentation.
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.11.0...5.11.1
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.11.0...5.11.1
 
 ## 5.11.0 - 2023-08-30
 
 ### What's Changed
 
-- [V5] Avoid triggering `eloquent.retrieved` event by @erikn69 in https://github.com/spatie/laravel-permission/pull/2490
+- [V5] Avoid triggering `eloquent.retrieved` event by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2490
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.10.2...5.11.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.10.2...5.11.0
 
 ## 5.10.2 - 2023-07-04
 
 ### What's Changed
 
-- Fix Eloquent Strictness on `permission:show` Command by @erikn69 in https://github.com/spatie/laravel-permission/pull/2457
+- Fix Eloquent Strictness on `permission:show` Command by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2457
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.10.1...5.10.2
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.10.1...5.10.2
 
 ## 5.10.1 - 2023-04-12
 
 ### What's Changed
 
-- [V5] Fix artisan command `permission:show` output of roles with underscores by @erikn69 in https://github.com/spatie/laravel-permission/pull/2396
+- [V5] Fix artisan command `permission:show` output of roles with underscores by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2396
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.10.0...5.10.1
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.10.0...5.10.1
 
 ## 5.10.0 - 2023-03-22
 
 ### What's Changed
 
-- Fix delete permissions on Permissions Model by @erikn69 in https://github.com/spatie/laravel-permission/pull/2366
+- Fix delete permissions on Permissions Model by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2366
 
 ## 5.9.1 - 2023-02-06
 
@@ -375,88 +375,88 @@ Apologies for the break caused by 5.9.0 !
 
 - Revert "fix: Lazily bind dependencies", originally #2309
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.9.0...5.9.1
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.9.0...5.9.1
 
 ## 5.9.0 - 2023-02-06
 
 ### What's Changed
 
-- Add `permission-` prefix to publish tag names by @sedehi in https://github.com/spatie/laravel-permission/pull/2301
-- Fix detaching user models on teams feature #2220 by @erikn69 in https://github.com/spatie/laravel-permission/pull/2221
-- Hint model properties by @AJenbo in https://github.com/spatie/laravel-permission/pull/2230
-- Custom wildcard verification/separators support by @erikn69 in https://github.com/spatie/laravel-permission/pull/2252
-- fix: Lazily bind dependencies by @olivernybroe in https://github.com/spatie/laravel-permission/pull/2309
-- Extract query to `getPermissionsWithRoles` method. by @xiCO2k in https://github.com/spatie/laravel-permission/pull/2316
+- Add `permission-` prefix to publish tag names by @sedehi in https://github.com/aluisio-pires/filament-permission/pull/2301
+- Fix detaching user models on teams feature #2220 by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2221
+- Hint model properties by @AJenbo in https://github.com/aluisio-pires/filament-permission/pull/2230
+- Custom wildcard verification/separators support by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2252
+- fix: Lazily bind dependencies by @olivernybroe in https://github.com/aluisio-pires/filament-permission/pull/2309
+- Extract query to `getPermissionsWithRoles` method. by @xiCO2k in https://github.com/aluisio-pires/filament-permission/pull/2316
 - This will allow to extend the PermissionRegistrar class and change the query.
 
 ### New Contributors
 
-- @sedehi made their first contribution in https://github.com/spatie/laravel-permission/pull/2301
-- @parallels999 made their first contribution in https://github.com/spatie/laravel-permission/pull/2265
-- @AJenbo made their first contribution in https://github.com/spatie/laravel-permission/pull/2230
-- @olivernybroe made their first contribution in https://github.com/spatie/laravel-permission/pull/2309
-- @xiCO2k made their first contribution in https://github.com/spatie/laravel-permission/pull/2316
+- @sedehi made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2301
+- @parallels999 made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2265
+- @AJenbo made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2230
+- @olivernybroe made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2309
+- @xiCO2k made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2316
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.8.0...5.9.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.8.0...5.9.0
 
 ## 5.8.0 - 2023-01-14
 
 ### What's Changed
 
-- Laravel 10.x Support by @erikn69 in https://github.com/spatie/laravel-permission/pull/2298
+- Laravel 10.x Support by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2298
 
 #### Administrative
 
-- [Docs] Link updated to match name change of related tool repo by @aliqasemzadeh in https://github.com/spatie/laravel-permission/pull/2253
-- Fix tests badge by @erikn69 in https://github.com/spatie/laravel-permission/pull/2300
-- Add Laravel Pint Support by @patinthehat in https://github.com/spatie/laravel-permission/pull/2269
-- Normalize composer.json by @patinthehat in https://github.com/spatie/laravel-permission/pull/2259
-- Add Dependabot Automation by @patinthehat in https://github.com/spatie/laravel-permission/pull/2257
+- [Docs] Link updated to match name change of related tool repo by @aliqasemzadeh in https://github.com/aluisio-pires/filament-permission/pull/2253
+- Fix tests badge by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2300
+- Add Laravel Pint Support by @patinthehat in https://github.com/aluisio-pires/filament-permission/pull/2269
+- Normalize composer.json by @patinthehat in https://github.com/aluisio-pires/filament-permission/pull/2259
+- Add Dependabot Automation by @patinthehat in https://github.com/aluisio-pires/filament-permission/pull/2257
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.7.0...5.8.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.7.0...5.8.0
 
 ## 5.7.0 - 2022-11-23
 
 ### What's Changed
 
-- [Bugfix] Avoid checking permissions-via-roles on `Role` model (ref `Model::preventAccessingMissingAttributes()`) by @juliomotol in https://github.com/spatie/laravel-permission/pull/2227
+- [Bugfix] Avoid checking permissions-via-roles on `Role` model (ref `Model::preventAccessingMissingAttributes()`) by @juliomotol in https://github.com/aluisio-pires/filament-permission/pull/2227
 
 ### New Contributors
 
-- @juliomotol made their first contribution in https://github.com/spatie/laravel-permission/pull/2227
+- @juliomotol made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2227
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.6.0...5.7.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.6.0...5.7.0
 
 ## 5.6.0 - 2022-11-19
 
 ### What's Changed
 
-- No longer throws an exception when checking `hasAllPermissions()` if the permission name does not exist by @mtawil in https://github.com/spatie/laravel-permission/pull/2248
+- No longer throws an exception when checking `hasAllPermissions()` if the permission name does not exist by @mtawil in https://github.com/aluisio-pires/filament-permission/pull/2248
 
 ### Doc Updates
 
-- [Docs] Add syncPermissions() in role-permissions.md by @xorinzor in https://github.com/spatie/laravel-permission/pull/2235
-- [Docs] Fix broken Link that link to freek's blog post by @chengkangzai in https://github.com/spatie/laravel-permission/pull/2234
+- [Docs] Add syncPermissions() in role-permissions.md by @xorinzor in https://github.com/aluisio-pires/filament-permission/pull/2235
+- [Docs] Fix broken Link that link to freek's blog post by @chengkangzai in https://github.com/aluisio-pires/filament-permission/pull/2234
 
 ### New Contributors
 
-- @xorinzor made their first contribution in https://github.com/spatie/laravel-permission/pull/2235
-- @chengkangzai made their first contribution in https://github.com/spatie/laravel-permission/pull/2234
-- @mtawil made their first contribution in https://github.com/spatie/laravel-permission/pull/2248
+- @xorinzor made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2235
+- @chengkangzai made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2234
+- @mtawil made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2248
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.16...5.6.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.16...5.6.0
 
 ## 5.5.16 - 2022-10-23
 
 ### What's Changed
 
-- optimize `for` loop in WildcardPermission by @SubhanSh in https://github.com/spatie/laravel-permission/pull/2113
+- optimize `for` loop in WildcardPermission by @SubhanSh in https://github.com/aluisio-pires/filament-permission/pull/2113
 
 ### New Contributors
 
-- @SubhanSh made their first contribution in https://github.com/spatie/laravel-permission/pull/2113
+- @SubhanSh made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2113
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.15...5.5.16
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.15...5.5.16
 
 ## 5.5.15 - 2022-10-23
 
@@ -464,10 +464,10 @@ Autocomplete all Blade directives via Laravel Idea plugin
 
 ### What's Changed
 
-- Autocomplete all Blade directives via Laravel Idea plugin by @maartenpaauw in https://github.com/spatie/laravel-permission/pull/2210
-- Add tests for display roles/permissions on UnauthorizedException by @erikn69 in https://github.com/spatie/laravel-permission/pull/2228
+- Autocomplete all Blade directives via Laravel Idea plugin by @maartenpaauw in https://github.com/aluisio-pires/filament-permission/pull/2210
+- Add tests for display roles/permissions on UnauthorizedException by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2228
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.14...5.5.15
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.14...5.5.15
 
 ## 5.5.14 - 2022-10-21
 
@@ -475,21 +475,21 @@ FIXED BREAKING CHANGE. (Sorry about that!)
 
 ### What's Changed
 
-- Revert "Avoid calling the config helper in the role/perm model constructor" by @drbyte in https://github.com/spatie/laravel-permission/pull/2225
+- Revert "Avoid calling the config helper in the role/perm model constructor" by @drbyte in https://github.com/aluisio-pires/filament-permission/pull/2225
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.13...5.5.14
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.13...5.5.14
 
 ## 5.5.13 - 2022-10-21
 
 ### What's Changed
 
-- fix UnauthorizedException: Wrong configuration was used in forRoles by @Sy-Dante in https://github.com/spatie/laravel-permission/pull/2224
+- fix UnauthorizedException: Wrong configuration was used in forRoles by @Sy-Dante in https://github.com/aluisio-pires/filament-permission/pull/2224
 
 ### New Contributors
 
-- @Sy-Dante made their first contribution in https://github.com/spatie/laravel-permission/pull/2224
+- @Sy-Dante made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2224
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.12...5.5.13
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.12...5.5.13
 
 ## 5.5.12 - 2022-10-19
 
@@ -497,29 +497,29 @@ Fix regression introduced in `5.5.10`
 
 ### What's Changed
 
-- Fix undefined index guard_name by @erikn69 in https://github.com/spatie/laravel-permission/pull/2219
+- Fix undefined index guard_name by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2219
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.11...5.5.12
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.11...5.5.12
 
 ## 5.5.11 - 2022-10-19
 
 ### What's Changed
 
-- Support static arrays on blade directives by @erikn69 in https://github.com/spatie/laravel-permission/pull/2168
+- Support static arrays on blade directives by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2168
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.10...5.5.11
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.10...5.5.11
 
 ## 5.5.10 - 2022-10-19
 
 ### What's Changed
 
-- Avoid calling the config helper in the role/perm model constructor by @adiafora in https://github.com/spatie/laravel-permission/pull/2098 as discussed in https://github.com/spatie/laravel-permission/issues/2097 regarding `DI`
+- Avoid calling the config helper in the role/perm model constructor by @adiafora in https://github.com/aluisio-pires/filament-permission/pull/2098 as discussed in https://github.com/aluisio-pires/filament-permission/issues/2097 regarding `DI`
 
 ### New Contributors
 
-- @adiafora made their first contribution in https://github.com/spatie/laravel-permission/pull/2098
+- @adiafora made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2098
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.9...5.5.10
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.9...5.5.10
 
 ## 5.5.9 - 2022-10-19
 
@@ -527,13 +527,13 @@ Compatibility Bugfix
 
 ### What's Changed
 
-- Prevent `MissingAttributeException` for `guard_name` by @ejunker in https://github.com/spatie/laravel-permission/pull/2216
+- Prevent `MissingAttributeException` for `guard_name` by @ejunker in https://github.com/aluisio-pires/filament-permission/pull/2216
 
 ### New Contributors
 
-- @ejunker made their first contribution in https://github.com/spatie/laravel-permission/pull/2216
+- @ejunker made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2216
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.8...5.5.9
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.8...5.5.9
 
 ## 5.5.8 - 2022-10-19
 
@@ -541,9 +541,9 @@ Compatibility Bugfix
 
 ### What's Changed
 
-- Fix returning all roles instead of the assigned by @erikn69 in https://github.com/spatie/laravel-permission/pull/2194
+- Fix returning all roles instead of the assigned by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2194
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.7...5.5.8
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.7...5.5.8
 
 ## 5.5.7 - 2022-10-19
 
@@ -551,10 +551,10 @@ Optimize HasPermissions trait
 
 ### What's Changed
 
-- Delegate permission collection filter to another method by @angeljqv in https://github.com/spatie/laravel-permission/pull/2182
-- Delegate permission filter to another method by @angeljqv in https://github.com/spatie/laravel-permission/pull/2183
+- Delegate permission collection filter to another method by @angeljqv in https://github.com/aluisio-pires/filament-permission/pull/2182
+- Delegate permission filter to another method by @angeljqv in https://github.com/aluisio-pires/filament-permission/pull/2183
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.6...5.5.7
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.6...5.5.7
 
 ## 5.5.6 - 2022-10-19
 
@@ -562,97 +562,97 @@ Just a maintenance release.
 
 ### What's Changed
 
-- Actions: add PHP 8.2 Build by @erikn69 in https://github.com/spatie/laravel-permission/pull/2214
-- Docs: Fix small syntax error in teams-permissions.md by @miten5 in https://github.com/spatie/laravel-permission/pull/2171
-- Docs: Update documentation for multiple guards by @gms8994 in https://github.com/spatie/laravel-permission/pull/2169
-- Docs: Make Writing Policies link clickable by @maartenpaauw in https://github.com/spatie/laravel-permission/pull/2202
-- Docs: Add note about non-standard User models by @androidacy-user in https://github.com/spatie/laravel-permission/pull/2179
-- Docs: Fix explanation of results for hasAllDirectPermissions in role-permission.md by @drdan18 in https://github.com/spatie/laravel-permission/pull/2139
-- Docs: Add ULIDs reference by @erikn69 in https://github.com/spatie/laravel-permission/pull/2213
+- Actions: add PHP 8.2 Build by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2214
+- Docs: Fix small syntax error in teams-permissions.md by @miten5 in https://github.com/aluisio-pires/filament-permission/pull/2171
+- Docs: Update documentation for multiple guards by @gms8994 in https://github.com/aluisio-pires/filament-permission/pull/2169
+- Docs: Make Writing Policies link clickable by @maartenpaauw in https://github.com/aluisio-pires/filament-permission/pull/2202
+- Docs: Add note about non-standard User models by @androidacy-user in https://github.com/aluisio-pires/filament-permission/pull/2179
+- Docs: Fix explanation of results for hasAllDirectPermissions in role-permission.md by @drdan18 in https://github.com/aluisio-pires/filament-permission/pull/2139
+- Docs: Add ULIDs reference by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2213
 
 ### New Contributors
 
-- @miten5 made their first contribution in https://github.com/spatie/laravel-permission/pull/2171
-- @gms8994 made their first contribution in https://github.com/spatie/laravel-permission/pull/2169
-- @maartenpaauw made their first contribution in https://github.com/spatie/laravel-permission/pull/2202
-- @androidacy-user made their first contribution in https://github.com/spatie/laravel-permission/pull/2179
-- @drdan18 made their first contribution in https://github.com/spatie/laravel-permission/pull/2139
+- @miten5 made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2171
+- @gms8994 made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2169
+- @maartenpaauw made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2202
+- @androidacy-user made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2179
+- @drdan18 made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2139
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.5...5.5.6
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.5...5.5.6
 
 ## 5.5.5 - 2022-06-29
 
 ### What's Changed
 
-- Custom primary keys tests(Only tests) by @erikn69 in https://github.com/spatie/laravel-permission/pull/2096
-- [PHP 8.2] Fix `${var}` string interpolation deprecation by @Ayesh in https://github.com/spatie/laravel-permission/pull/2117
-- Use `getKey`, `getKeyName` instead of `id` by @erikn69 in https://github.com/spatie/laravel-permission/pull/2116
-- On WildcardPermission class use static instead of self for extending by @erikn69 in https://github.com/spatie/laravel-permission/pull/2111
-- Clear roles array after hydrate from cache by @angeljqv in https://github.com/spatie/laravel-permission/pull/2099
+- Custom primary keys tests(Only tests) by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2096
+- [PHP 8.2] Fix `${var}` string interpolation deprecation by @Ayesh in https://github.com/aluisio-pires/filament-permission/pull/2117
+- Use `getKey`, `getKeyName` instead of `id` by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2116
+- On WildcardPermission class use static instead of self for extending by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2111
+- Clear roles array after hydrate from cache by @angeljqv in https://github.com/aluisio-pires/filament-permission/pull/2099
 
 ### New Contributors
 
-- @Ayesh made their first contribution in https://github.com/spatie/laravel-permission/pull/2117
+- @Ayesh made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2117
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.4...5.5.5
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.4...5.5.5
 
 ## 5.5.4 - 2022-05-16
 
 ## What's Changed
 
-- Support custom primary key names on models by @erikn69 in https://github.com/spatie/laravel-permission/pull/2092
-- Fix UuidTrait on uuid doc page by @abhishekpaul in https://github.com/spatie/laravel-permission/pull/2094
-- Support custom fields on cache by @erikn69 in https://github.com/spatie/laravel-permission/pull/2091
+- Support custom primary key names on models by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2092
+- Fix UuidTrait on uuid doc page by @abhishekpaul in https://github.com/aluisio-pires/filament-permission/pull/2094
+- Support custom fields on cache by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2091
 
 ## New Contributors
 
-- @abhishekpaul made their first contribution in https://github.com/spatie/laravel-permission/pull/2094
+- @abhishekpaul made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2094
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.3...5.5.4
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.3...5.5.4
 
 ## 5.5.3 - 2022-05-05
 
 ## What's Changed
 
-- Update .gitattributes by @angeljqv in https://github.com/spatie/laravel-permission/pull/2065
-- Remove double semicolon from add_teams_fields.php.stub by @morganarnel in https://github.com/spatie/laravel-permission/pull/2067
-- [V5] Allow revokePermissionTo to accept Permission[] by @erikn69 in https://github.com/spatie/laravel-permission/pull/2014
-- [V5] Improve typing in role's findById and findOrCreate method by @itsfaqih in https://github.com/spatie/laravel-permission/pull/2022
-- [V5] Cache loader improvements by @erikn69 in https://github.com/spatie/laravel-permission/pull/1912
+- Update .gitattributes by @angeljqv in https://github.com/aluisio-pires/filament-permission/pull/2065
+- Remove double semicolon from add_teams_fields.php.stub by @morganarnel in https://github.com/aluisio-pires/filament-permission/pull/2067
+- [V5] Allow revokePermissionTo to accept Permission[] by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2014
+- [V5] Improve typing in role's findById and findOrCreate method by @itsfaqih in https://github.com/aluisio-pires/filament-permission/pull/2022
+- [V5] Cache loader improvements by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/1912
 
 ## New Contributors
 
-- @morganarnel made their first contribution in https://github.com/spatie/laravel-permission/pull/2067
-- @itsfaqih made their first contribution in https://github.com/spatie/laravel-permission/pull/2022
+- @morganarnel made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2067
+- @itsfaqih made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2022
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.2...5.5.3
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.2...5.5.3
 
 ## 5.5.2 - 2022-03-09
 
 ## What's Changed
 
-- [Fixes BIG bug] register blade directives after resolving blade compiler by @tabacitu in https://github.com/spatie/laravel-permission/pull/2048
+- [Fixes BIG bug] register blade directives after resolving blade compiler by @tabacitu in https://github.com/aluisio-pires/filament-permission/pull/2048
 
 ## New Contributors
 
-- @tabacitu made their first contribution in https://github.com/spatie/laravel-permission/pull/2048
+- @tabacitu made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2048
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.1...5.5.2
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.1...5.5.2
 
 ## 5.5.1 - 2022-03-03
 
 ## What's Changed
 
-- Spelling correction by @gergo85 in https://github.com/spatie/laravel-permission/pull/2024
-- update broken link to laravel exception by @kingzamzon in https://github.com/spatie/laravel-permission/pull/2023
-- Fix Blade Directives incompatibility with renderers by @erikn69 in https://github.com/spatie/laravel-permission/pull/2039
+- Spelling correction by @gergo85 in https://github.com/aluisio-pires/filament-permission/pull/2024
+- update broken link to laravel exception by @kingzamzon in https://github.com/aluisio-pires/filament-permission/pull/2023
+- Fix Blade Directives incompatibility with renderers by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/2039
 
 ## New Contributors
 
-- @gergo85 made their first contribution in https://github.com/spatie/laravel-permission/pull/2024
-- @kingzamzon made their first contribution in https://github.com/spatie/laravel-permission/pull/2023
+- @gergo85 made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2024
+- @kingzamzon made their first contribution in https://github.com/aluisio-pires/filament-permission/pull/2023
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.5.0...5.5.1
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.5.0...5.5.1
 
 ## 5.5.0 - 2022-01-11
 
@@ -662,17 +662,17 @@ Just a maintenance release.
 
 ## What's Changed
 
-- Add support for PHP 8.1 by @freekmurze in https://github.com/spatie/laravel-permission/pull/1926
+- Add support for PHP 8.1 by @freekmurze in https://github.com/aluisio-pires/filament-permission/pull/1926
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.3.2...5.4.0
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.3.2...5.4.0
 
 ## 5.3.2 - 2021-11-17
 
 ## What's Changed
 
-- [V5] Support for custom key names on Role,Permission by @erikn69 in https://github.com/spatie/laravel-permission/pull/1913
+- [V5] Support for custom key names on Role,Permission by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/1913
 
-**Full Changelog**: https://github.com/spatie/laravel-permission/compare/5.3.1...5.3.2
+**Full Changelog**: https://github.com/aluisio-pires/filament-permission/compare/5.3.1...5.3.2
 
 ## 5.3.1 - 2021-11-04
 
@@ -684,11 +684,11 @@ Just a maintenance release.
 
 ## 5.2.0 - 2021-10-28
 
-- [V5] Fix detaching on all teams instead of only current #1888 by @erikn69 in https://github.com/spatie/laravel-permission/pull/1890
-- [V5] Add uuid compatibility support on teams by @erikn69 in https://github.com/spatie/laravel-permission/pull/1857
-- Adds setRoleClass method to PermissionRegistrar by @timschwartz in https://github.com/spatie/laravel-permission/pull/1867
-- Load permissions for preventLazyLoading by @bahramsadin in https://github.com/spatie/laravel-permission/pull/1884
-- [V5] Doc for `Super Admin` on teams by @erikn69 in https://github.com/spatie/laravel-permission/pull/1845
+- [V5] Fix detaching on all teams instead of only current #1888 by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/1890
+- [V5] Add uuid compatibility support on teams by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/1857
+- Adds setRoleClass method to PermissionRegistrar by @timschwartz in https://github.com/aluisio-pires/filament-permission/pull/1867
+- Load permissions for preventLazyLoading by @bahramsadin in https://github.com/aluisio-pires/filament-permission/pull/1884
+- [V5] Doc for `Super Admin` on teams by @erikn69 in https://github.com/aluisio-pires/filament-permission/pull/1845
 
 ## 5.1.1 - 2021-09-01
 
@@ -944,14 +944,14 @@ The following changes are not "breaking", but worth making the updates to your a
 
 1. Config file: The `config/permission.php` file changed to move cache-related settings into a sub-array. **You should review the changes and merge the updates into your own config file.** Specifically the `expiration_time` value has moved into a sub-array entry, and the old top-level entry is no longer used.
 2. See the original config file here:
-3. https://github.com/spatie/laravel-permission/blob/main/config/permission.php
+3. https://github.com/aluisio-pires/filament-permission/blob/main/config/permission.php
 4. 
 5. Cache Resets: If your `app` or `tests` are clearing the cache by specifying the cache key, **it is better to use the built-in forgetCachedPermissions() method** so that it properly handles tagged cache entries. Here is the recommended change:
 6. 
 
 ```diff
 - app()['cache']->forget('spatie.permission.cache');
-+ $this->app->make(\Spatie\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
++ $this->app->make(\AluisioPires\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
 
 
 

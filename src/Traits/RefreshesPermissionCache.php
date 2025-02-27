@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Permission\Traits;
+namespace AluisioPires\Permission\Traits;
 
-use Spatie\Permission\PermissionRegistrar;
+use AluisioPires\Permission\PermissionRegistrar;
 
 trait RefreshesPermissionCache
 {

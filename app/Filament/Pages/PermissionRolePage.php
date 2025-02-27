@@ -2,13 +2,13 @@
 
 namespace App\Filament\Pages;
 
+use AluisioPires\Permission\PermissionRegistrar;
 use App\Models\Permission;
 use App\Models\Role;
 use Filament\Notifications\Notification;
 use Filament\Pages\Page;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Support\Collection;
-use Spatie\Permission\PermissionRegistrar;
 
 class PermissionRolePage extends Page
 {

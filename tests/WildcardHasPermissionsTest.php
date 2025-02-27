@@ -1,15 +1,15 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace AluisioPires\Permission\Tests;
 
+use AluisioPires\Permission\Exceptions\PermissionDoesNotExist;
+use AluisioPires\Permission\Exceptions\WildcardPermissionInvalidArgument;
+use AluisioPires\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
+use AluisioPires\Permission\Models\Permission;
+use AluisioPires\Permission\Tests\TestModels\User;
+use AluisioPires\Permission\Tests\TestModels\WildcardPermission;
 use PHPUnit\Framework\Attributes\RequiresPhp;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Spatie\Permission\Exceptions\WildcardPermissionInvalidArgument;
-use Spatie\Permission\Exceptions\WildcardPermissionNotProperlyFormatted;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Tests\TestModels\User;
-use Spatie\Permission\Tests\TestModels\WildcardPermission;
 
 class WildcardHasPermissionsTest extends TestCase
 {

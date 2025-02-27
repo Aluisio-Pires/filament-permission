@@ -3,7 +3,7 @@
 if (! function_exists('getModelForGuard')) {
     function getModelForGuard(string $guard): ?string
     {
-        return Spatie\Permission\Guard::getModelForGuard($guard);
+        return AluisioPires\Permission\Guard::getModelForGuard($guard);
     }
 
 }
@@ -14,7 +14,7 @@ if (! function_exists('setPermissionsTeamId')) {
      */
     function setPermissionsTeamId($id)
     {
-        app(\Spatie\Permission\PermissionRegistrar::class)->setPermissionsTeamId($id);
+        app(\AluisioPires\Permission\PermissionRegistrar::class)->setPermissionsTeamId($id);
     }
 }
 
@@ -24,6 +24,6 @@ if (! function_exists('getPermissionsTeamId')) {
      */
     function getPermissionsTeamId()
     {
-        return app(\Spatie\Permission\PermissionRegistrar::class)->getPermissionsTeamId();
+        return app(\AluisioPires\Permission\PermissionRegistrar::class)->getPermissionsTeamId();
     }
 }

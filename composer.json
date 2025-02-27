@@ -1,5 +1,5 @@
 {
-    "name": "spatie/laravel-permission",
+    "name": "aluisio-pires/filament-permission",
     "description": "Permission handling for Laravel 8.0 and up",
     "license": "MIT",
     "keywords": [
@@ -20,7 +20,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/spatie/laravel-permission",
+    "homepage": "https://github.com/aluisio-pires/filament-permission",
     "require": {
         "php": "^8.0",
         "filament/filament": "^3.2",
@@ -39,7 +39,7 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Spatie\\Permission\\": "src"
+            "AluisioPires\\Permission\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -47,7 +47,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Permission\\Tests\\": "tests"
+            "AluisioPires\\Permission\\Tests\\": "tests"
         }
     },
     "config": {
@@ -60,7 +60,7 @@
         },
         "laravel": {
             "providers": [
-                "Spatie\\Permission\\PermissionServiceProvider"
+                "AluisioPires\\Permission\\PermissionServiceProvider"
             ]
         }
     },

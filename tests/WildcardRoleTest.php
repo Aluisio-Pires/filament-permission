@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace AluisioPires\Permission\Tests;
 
+use AluisioPires\Permission\Models\Permission;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Models\Permission;
 
 class WildcardRoleTest extends TestCase
 {

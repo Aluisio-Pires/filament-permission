@@ -1,11 +1,11 @@
 <?php
 
-namespace Spatie\Permission\Middleware;
+namespace AluisioPires\Permission\Middleware;
 
+use AluisioPires\Permission\Exceptions\UnauthorizedException;
+use AluisioPires\Permission\Guard;
 use Closure;
 use Illuminate\Support\Facades\Auth;
-use Spatie\Permission\Exceptions\UnauthorizedException;
-use Spatie\Permission\Guard;
 
 class RoleOrPermissionMiddleware
 {

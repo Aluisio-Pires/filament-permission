@@ -4,11 +4,11 @@ weight: 1
 ---
 
 ## Add The Trait
-First, add the `Spatie\Permission\Traits\HasRoles` trait to your `User` model(s):
+First, add the `AluisioPires\Permission\Traits\HasRoles` trait to your `User` model(s):
 
 ```php
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Spatie\Permission\Traits\HasRoles;
+use AluisioPires\Permission\Traits\HasRoles;
 
 class User extends Authenticatable
 {
@@ -23,8 +23,8 @@ This package allows for users to be associated with permissions and roles. Every
 A `Role` and a `Permission` are regular Eloquent models. They require a `name` and can be created like this:
 
 ```php
-use Spatie\Permission\Models\Role;
-use Spatie\Permission\Models\Permission;
+use AluisioPires\Permission\Models\Role;
+use AluisioPires\Permission\Models\Permission;
 
 $role = Role::create(['name' => 'writer']);
 $permission = Permission::create(['name' => 'edit articles']);
@@ -82,7 +82,7 @@ $users = User::role('writer')->get(); // Returns only users with the role 'write
 $nonEditors = User::withoutRole('editor')->get(); // Returns only users without the role 'editor'
 ```
 
-The `role` and `withoutRole` scopes can accept a string, a `\Spatie\Permission\Models\Role` object or an `\Illuminate\Support\Collection` object.
+The `role` and `withoutRole` scopes can accept a string, a `\AluisioPires\Permission\Models\Role` object or an `\Illuminate\Support\Collection` object.
 
 The same trait also adds scopes to only get users that have or don't have a certain permission.
 
@@ -91,7 +91,7 @@ $users = User::permission('edit articles')->get(); // Returns only users with th
 $usersWhoCannotEditArticles = User::withoutPermission('edit articles')->get(); // Returns all users without the permission 'edit articles' (inherited or directly)
 ```
 
-The scope can accept a string, a `\Spatie\Permission\Models\Permission` object or an `\Illuminate\Support\Collection` object.
+The scope can accept a string, a `\AluisioPires\Permission\Models\Permission` object or an `\Illuminate\Support\Collection` object.
 
 
 ## Eloquent Calls

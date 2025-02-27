@@ -16,7 +16,7 @@ In your tests simply add a `setUp()` instruction to re-register the permissions,
         parent::setUp();
 
         // now de-register all the roles and permissions by clearing the permission cache
-        $this->app->make(\Spatie\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
+        $this->app->make(\AluisioPires\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
     }
 ```
 
@@ -27,7 +27,7 @@ If you are using Laravel's `LazilyRefreshDatabase` trait, you most likely want t
 ```php
 Event::listen(DatabaseRefreshed::class, function () {
     $this->artisan('db:seed', ['--class' => RoleAndPermissionSeeder::class]);
-    $this->app->make(\Spatie\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
+    $this->app->make(\AluisioPires\Permission\PermissionRegistrar::class)->forgetCachedPermissions();
 });
 ```
 

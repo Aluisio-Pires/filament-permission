@@ -1,8 +1,8 @@
 <?php
 
-namespace Spatie\Permission\Tests\TestModels;
+namespace AluisioPires\Permission\Tests\TestModels;
 
-use Spatie\Permission\Traits\HasRoles;
+use AluisioPires\Permission\Traits\HasRoles;
 
 class User extends UserWithoutHasRoles
 {

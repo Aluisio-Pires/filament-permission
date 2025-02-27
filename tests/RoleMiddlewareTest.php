@@ -1,7 +1,10 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace AluisioPires\Permission\Tests;
 
+use AluisioPires\Permission\Exceptions\UnauthorizedException;
+use AluisioPires\Permission\Middleware\RoleMiddleware;
+use AluisioPires\Permission\Tests\TestModels\UserWithoutHasRoles;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
@@ -9,9 +12,6 @@ use Illuminate\Support\Facades\Config;
 use InvalidArgumentException;
 use Laravel\Passport\Passport;
 use PHPUnit\Framework\Attributes\Test;
-use Spatie\Permission\Exceptions\UnauthorizedException;
-use Spatie\Permission\Middleware\RoleMiddleware;
-use Spatie\Permission\Tests\TestModels\UserWithoutHasRoles;
 
 class RoleMiddlewareTest extends TestCase
 {
@@ -354,15 +354,15 @@ class RoleMiddlewareTest extends TestCase
     public function the_middleware_can_be_created_with_static_using_method()
     {
         $this->assertSame(
-            'Spatie\Permission\Middleware\RoleMiddleware:testAdminRole',
+            'AluisioPires\Permission\Middleware\RoleMiddleware:testAdminRole',
             RoleMiddleware::using('testAdminRole')
         );
         $this->assertEquals(
-            'Spatie\Permission\Middleware\RoleMiddleware:testAdminRole,my-guard',
+            'AluisioPires\Permission\Middleware\RoleMiddleware:testAdminRole,my-guard',
             RoleMiddleware::using('testAdminRole', 'my-guard')
         );
         $this->assertEquals(
-            'Spatie\Permission\Middleware\RoleMiddleware:testAdminRole|anotherRole',
+            'AluisioPires\Permission\Middleware\RoleMiddleware:testAdminRole|anotherRole',
             RoleMiddleware::using(['testAdminRole', 'anotherRole'])
         );
     }

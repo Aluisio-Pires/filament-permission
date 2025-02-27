@@ -27,9 +27,9 @@ In Laravel 11 open `/bootstrap/app.php` and register them there:
 ```php
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->alias([
-            'role' => \Spatie\Permission\Middleware\RoleMiddleware::class,
-            'permission' => \Spatie\Permission\Middleware\PermissionMiddleware::class,
-            'role_or_permission' => \Spatie\Permission\Middleware\RoleOrPermissionMiddleware::class,
+            'role' => \AluisioPires\Permission\Middleware\RoleMiddleware::class,
+            'permission' => \AluisioPires\Permission\Middleware\PermissionMiddleware::class,
+            'role_or_permission' => \AluisioPires\Permission\Middleware\RoleOrPermissionMiddleware::class,
         ]);
     })
 ```
@@ -42,9 +42,9 @@ In Laravel 9 and 10 you can add them in `app/Http/Kernel.php`:
 // Laravel 10+ uses $middlewareAliases = [
 protected $middlewareAliases = [
     // ...
-    'role' => \Spatie\Permission\Middleware\RoleMiddleware::class,
-    'permission' => \Spatie\Permission\Middleware\PermissionMiddleware::class,
-    'role_or_permission' => \Spatie\Permission\Middleware\RoleOrPermissionMiddleware::class,
+    'role' => \AluisioPires\Permission\Middleware\RoleMiddleware::class,
+    'permission' => \AluisioPires\Permission\Middleware\PermissionMiddleware::class,
+    'role_or_permission' => \AluisioPires\Permission\Middleware\RoleOrPermissionMiddleware::class,
 ];
 ```
 
@@ -94,8 +94,8 @@ public static function middleware(): array
         // examples with aliases, pipe-separated names, guards, etc:
         'role_or_permission:manager|edit articles',
         new Middleware('role:author', only: ['index']),
-        new Middleware(\Spatie\Permission\Middleware\RoleMiddleware::using('manager'), except:['show']),
-        new Middleware(\Spatie\Permission\Middleware\PermissionMiddleware::using('delete records,api'), only:['destroy']),
+        new Middleware(\AluisioPires\Permission\Middleware\RoleMiddleware::using('manager'), except:['show']),
+        new Middleware(\AluisioPires\Permission\Middleware\PermissionMiddleware::using('delete records,api'), only:['destroy']),
     ];
 }
 ```
@@ -119,8 +119,8 @@ You can also use Laravel's Model Policy feature in your controller methods. See 
 All of the middleware can also be applied by calling the static `using` method, which accepts either an array or a `|`-separated string as input.
 
 ```php
-Route::group(['middleware' => [\Spatie\Permission\Middleware\RoleMiddleware::using('manager')]], function () { ... });
-Route::group(['middleware' => [\Spatie\Permission\Middleware\PermissionMiddleware::using('publish articles|edit articles')]], function () { ... });
-Route::group(['middleware' => [\Spatie\Permission\Middleware\RoleOrPermissionMiddleware::using(['manager', 'edit articles'])]], function () { ... });
+Route::group(['middleware' => [\AluisioPires\Permission\Middleware\RoleMiddleware::using('manager')]], function () { ... });
+Route::group(['middleware' => [\AluisioPires\Permission\Middleware\PermissionMiddleware::using('publish articles|edit articles')]], function () { ... });
+Route::group(['middleware' => [\AluisioPires\Permission\Middleware\RoleOrPermissionMiddleware::using(['manager', 'edit articles'])]], function () { ... });
 ```
 

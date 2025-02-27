@@ -19,7 +19,7 @@ You may wish to extend PhpStorm to support Blade Directives of this package.
 **role**
 
 - has parameter = YES
-- Prefix: `<?php if(\\Spatie\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasRole', {`
+- Prefix: `<?php if(\\AluisioPires\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasRole', {`
 - Suffix: `})): ?>`
 
 --
@@ -27,7 +27,7 @@ You may wish to extend PhpStorm to support Blade Directives of this package.
 **elserole**
 
 - has parameter = YES
-- Prefix: `<?php elseif(\\Spatie\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasRole', {`
+- Prefix: `<?php elseif(\\AluisioPires\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasRole', {`
 - Suffix: `})): ?>`
 
 **endrole**
@@ -41,7 +41,7 @@ You may wish to extend PhpStorm to support Blade Directives of this package.
 **hasrole**
 
 - has parameter = YES
-- Prefix: `<?php if(\\Spatie\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasRole', {`
+- Prefix: `<?php if(\\AluisioPires\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasRole', {`
 - Suffix: `})): ?>`
 
 --
@@ -57,7 +57,7 @@ You may wish to extend PhpStorm to support Blade Directives of this package.
 **hasanyrole**
 
 - has parameter = YES
-- Prefix: `<?php if(\\Spatie\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasAnyRole', {`
+- Prefix: `<?php if(\\AluisioPires\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasAnyRole', {`
 - Suffix: `})): ?>`
 
 --
@@ -73,7 +73,7 @@ You may wish to extend PhpStorm to support Blade Directives of this package.
 **hasallroles**
 
 - has parameter = YES
-- Prefix: `<?php if(\\Spatie\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasAllRoles', {`
+- Prefix: `<?php if(\\AluisioPires\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasAllRoles', {`
 - Suffix: `})): ?>`
 
 --
@@ -89,7 +89,7 @@ You may wish to extend PhpStorm to support Blade Directives of this package.
 **unlessrole**
 
 - has parameter = YES
-- Prefix: `<?php if(! \\Spatie\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasRole', {`
+- Prefix: `<?php if(! \\AluisioPires\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasRole', {`
 - Suffix: `})): ?>`
 
 --
@@ -105,7 +105,7 @@ You may wish to extend PhpStorm to support Blade Directives of this package.
 **hasexactroles**
 
 - has parameter = YES
-- Prefix: `<?php if(\\Spatie\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasExactRoles', {`
+- Prefix: `<?php if(\\AluisioPires\\Permission\\PermissionServiceProvider::bladeMethodWrapper('hasExactRoles', {`
 - Suffix: `})): ?>`
 
 --

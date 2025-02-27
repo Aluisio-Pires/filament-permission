@@ -38,15 +38,15 @@ sed -i '' 's/DB_DATABASE=/#DB_DATABASE=/' .env
 touch database/database.sqlite
 
 # Package
-composer require spatie/laravel-permission
-php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"
+composer require aluisio-pires/filament-permission
+php artisan vendor:publish --provider="AluisioPires\Permission\PermissionServiceProvider"
 git add .
-git commit -m "Add Spatie Laravel Permissions package"
+git commit -m "Add AluisioPires Laravel Permissions package"
 php artisan migrate:fresh
 
 # Add `HasRoles` trait to User model
-sed -i '' $'s/use HasFactory, Notifiable;/use HasFactory, Notifiable;\\\n    use \\\\Spatie\\\\Permission\\\\Traits\\\\HasRoles;/' app/Models/User.php
-sed -i '' $'s/use HasApiTokens, HasFactory, Notifiable;/use HasApiTokens, HasFactory, Notifiable;\\\n    use \\\\Spatie\\\\Permission\\\\Traits\\\\HasRoles;/' app/Models/User.php
+sed -i '' $'s/use HasFactory, Notifiable;/use HasFactory, Notifiable;\\\n    use \\\\AluisioPires\\\\Permission\\\\Traits\\\\HasRoles;/' app/Models/User.php
+sed -i '' $'s/use HasApiTokens, HasFactory, Notifiable;/use HasApiTokens, HasFactory, Notifiable;\\\n    use \\\\AluisioPires\\\\Permission\\\\Traits\\\\HasRoles;/' app/Models/User.php
 git add . && git commit -m "Add HasRoles trait"
 ```
 
@@ -68,9 +68,9 @@ git add . && git commit -m "Setup auth scaffold"
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Spatie\Permission\Models\Permission;
-use Spatie\Permission\Models\Role;
-use Spatie\Permission\PermissionRegistrar;
+use AluisioPires\Permission\Models\Permission;
+use AluisioPires\Permission\Models\Role;
+use AluisioPires\Permission\PermissionRegistrar;
 
 class PermissionsDemoSeeder extends Seeder
 {

@@ -61,7 +61,7 @@ $user->hasExactRoles(Role::all());
 ```
 
 The `assignRole`, `hasRole`, `hasAnyRole`, `hasAllRoles`, `hasExactRoles`  and `removeRole` functions can accept a
- string, a `\Spatie\Permission\Models\Role` object or an `\Illuminate\Support\Collection` object.
+ string, a `\AluisioPires\Permission\Models\Role` object or an `\Illuminate\Support\Collection` object.
 
 
 ## Assigning Permissions to Roles
@@ -91,7 +91,7 @@ $role->syncPermissions(['edit articles', 'delete articles']);
 ```
 
 The `givePermissionTo` and `revokePermissionTo` functions can accept a
-string or a `Spatie\Permission\Models\Permission` object.
+string or a `AluisioPires\Permission\Models\Permission` object.
 
 
 **NOTE: Permissions are inherited from roles automatically.**
@@ -167,7 +167,7 @@ $user->getPermissionsViaRoles();
 $user->getAllPermissions();
 ```
 
-All these responses are collections of `Spatie\Permission\Models\Permission` objects.
+All these responses are collections of `AluisioPires\Permission\Models\Permission` objects.
 
 If we follow the previous example, the first response will be a collection with the `delete article` permission and 
 the second will be a collection with the `edit article` permission and the third will contain both.

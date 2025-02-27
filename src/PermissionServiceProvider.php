@@ -1,7 +1,9 @@
 <?php
 
-namespace Spatie\Permission;
+namespace AluisioPires\Permission;
 
+use AluisioPires\Permission\Contracts\Permission as PermissionContract;
+use AluisioPires\Permission\Contracts\Role as RoleContract;
 use Composer\InstalledVersions;
 use Illuminate\Contracts\Auth\Access\Gate;
 use Illuminate\Contracts\Events\Dispatcher;
@@ -13,8 +15,6 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\Compilers\BladeCompiler;
-use Spatie\Permission\Contracts\Permission as PermissionContract;
-use Spatie\Permission\Contracts\Role as RoleContract;
 
 class PermissionServiceProvider extends ServiceProvider
 {
@@ -122,7 +122,7 @@ class PermissionServiceProvider extends ServiceProvider
 
     protected function registerBladeExtensions(BladeCompiler $bladeCompiler): void
     {
-        $bladeMethodWrapper = '\\Spatie\\Permission\\PermissionServiceProvider::bladeMethodWrapper';
+        $bladeMethodWrapper = '\\AluisioPires\\Permission\\PermissionServiceProvider::bladeMethodWrapper';
 
         // permission checks
         $bladeCompiler->if('haspermission', fn () => $bladeMethodWrapper('checkPermissionTo', ...func_get_args()));
@@ -184,13 +184,13 @@ class PermissionServiceProvider extends ServiceProvider
 
         $config = $this->app['config'];
 
-        AboutCommand::add('Spatie Permissions', static fn () => [
+        AboutCommand::add('AluisioPires Permissions', static fn () => [
             'Features Enabled' => collect($features)
                 ->filter(fn (string $feature, string $name): bool => $config->get("permission.{$feature}"))
                 ->keys()
                 ->whenEmpty(fn (Collection $collection) => $collection->push('Default'))
                 ->join(', '),
-            'Version' => InstalledVersions::getPrettyVersion('spatie/laravel-permission'),
+            'Version' => InstalledVersions::getPrettyVersion('aluisio-pires/filament-permission'),
         ]);
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission\Tests;
+namespace AluisioPires\Permission\Tests;
 
 use Illuminate\Contracts\Auth\Access\Gate;
 use PHPUnit\Framework\Attributes\Test;

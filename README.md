@@ -2,9 +2,9 @@
 
 # Associate users with permissions and roles
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-permission.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-permission)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/spatie/laravel-permission/run-tests-L8.yml?branch=main&label=Tests)](https://github.com/spatie/laravel-permission/actions?query=workflow%3ATests+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-permission.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-permission)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/aluisio-pires/filament-permission.svg?style=flat-square)](https://packagist.org/packages/aluisio-pires/filament-permission)
+[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/aluisio-pires/filament-permission/run-tests-L8.yml?branch=main&label=Tests)](https://github.com/aluisio-pires/filament-permission/actions?query=workflow%3ATests+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/aluisio-pires/filament-permission.svg?style=flat-square)](https://packagist.org/packages/aluisio-pires/filament-permission)
 
 ## Documentation, Installation, and Usage Instructions
 
@@ -61,7 +61,7 @@ If you discover any security-related issues, please email [security@spatie.be](m
 
 You're free to use this package, but if it makes it to your production environment we highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using.
 
-Our address is: Spatie, Kruikstraat 22, 2018 Antwerp, Belgium.
+Our address is: AluisioPires, Kruikstraat 22, 2018 Antwerp, Belgium.
 
 We publish all received postcards [on our company website](https://spatie.be/en/opensource/postcards).
 

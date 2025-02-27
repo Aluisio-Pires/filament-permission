@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
+use AluisioPires\Permission\PermissionRegistrar;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Spatie\Permission\PermissionRegistrar;
 
-class Role extends \Spatie\Permission\Models\Role
+class Role extends \AluisioPires\Permission\Models\Role
 {
     use HasFactory;
 

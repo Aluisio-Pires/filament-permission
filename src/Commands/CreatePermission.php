@@ -1,9 +1,9 @@
 <?php
 
-namespace Spatie\Permission\Commands;
+namespace AluisioPires\Permission\Commands;
 
+use AluisioPires\Permission\Contracts\Permission as PermissionContract;
 use Illuminate\Console\Command;
-use Spatie\Permission\Contracts\Permission as PermissionContract;
 
 class CreatePermission extends Command
 {

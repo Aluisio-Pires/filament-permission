@@ -1,18 +1,18 @@
 <?php
 
-namespace Spatie\Permission\Models;
+namespace AluisioPires\Permission\Models;
 
+use AluisioPires\Permission\Contracts\Role as RoleContract;
+use AluisioPires\Permission\Exceptions\GuardDoesNotMatch;
+use AluisioPires\Permission\Exceptions\PermissionDoesNotExist;
+use AluisioPires\Permission\Exceptions\RoleAlreadyExists;
+use AluisioPires\Permission\Exceptions\RoleDoesNotExist;
+use AluisioPires\Permission\Guard;
+use AluisioPires\Permission\PermissionRegistrar;
+use AluisioPires\Permission\Traits\HasPermissions;
+use AluisioPires\Permission\Traits\RefreshesPermissionCache;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Spatie\Permission\Contracts\Role as RoleContract;
-use Spatie\Permission\Exceptions\GuardDoesNotMatch;
-use Spatie\Permission\Exceptions\PermissionDoesNotExist;
-use Spatie\Permission\Exceptions\RoleAlreadyExists;
-use Spatie\Permission\Exceptions\RoleDoesNotExist;
-use Spatie\Permission\Guard;
-use Spatie\Permission\PermissionRegistrar;
-use Spatie\Permission\Traits\HasPermissions;
-use Spatie\Permission\Traits\RefreshesPermissionCache;
 
 /**
  * @property ?\Illuminate\Support\Carbon $created_at
@@ -172,7 +172,7 @@ class Role extends Model implements RoleContract
     /**
      * Determine if the role may perform the given permission.
      *
-     * @param  string|int|\Spatie\Permission\Contracts\Permission|\BackedEnum  $permission
+     * @param  string|int|\AluisioPires\Permission\Contracts\Permission|\BackedEnum  $permission
      *
      * @throws PermissionDoesNotExist|GuardDoesNotMatch
      */

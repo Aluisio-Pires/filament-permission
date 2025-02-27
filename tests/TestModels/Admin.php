@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Permission\Tests\TestModels;
+namespace AluisioPires\Permission\Tests\TestModels;
 
 class Admin extends User
 {

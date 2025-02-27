@@ -7,7 +7,7 @@ If you need to override exceptions thrown by this package, you can simply use no
 
 An example is shown below for your convenience, but nothing here is specific to this package other than the name of the exception.
 
-You can find all the exceptions added by this package in the code here: [https://github.com/spatie/laravel-permission/tree/main/src/Exceptions](https://github.com/spatie/laravel-permission/tree/main/src/Exceptions)
+You can find all the exceptions added by this package in the code here: [https://github.com/aluisio-pires/filament-permission/tree/main/src/Exceptions](https://github.com/aluisio-pires/filament-permission/tree/main/src/Exceptions)
 
 
 **Laravel 10: app/Exceptions/Handler.php**
@@ -15,7 +15,7 @@ You can find all the exceptions added by this package in the code here: [https:/
 
 public function register()
 {
-    $this->renderable(function (\Spatie\Permission\Exceptions\UnauthorizedException $e, $request) {
+    $this->renderable(function (\AluisioPires\Permission\Exceptions\UnauthorizedException $e, $request) {
         return response()->json([
             'responseMessage' => 'You do not have the required authorization.',
             'responseStatus'  => 403,
@@ -28,7 +28,7 @@ public function register()
 ```php
 
 ->withExceptions(function (Exceptions $exceptions) {
-    $exceptions->render(function (\Spatie\Permission\Exceptions\UnauthorizedException $e, $request) {
+    $exceptions->render(function (\AluisioPires\Permission\Exceptions\UnauthorizedException $e, $request) {
         return response()->json([
             'responseMessage' => 'You do not have the required authorization.',
             'responseStatus'  => 403,
